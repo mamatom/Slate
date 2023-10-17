@@ -1,0 +1,29 @@
+/**
+ * @name Slate
+ * @author mamatom
+ * @description A fork of DiscordStyles/Slate
+ * @version 1.2
+ * @source https://github.com/mamatom/Slate/
+*/
+
+@import url('https://mamatom.github.io/Slate/dist/Slate.css');
+
+@import url("https://discordstyles.github.io/Slate/Serverlist.css");
+@import url("https://discordstyles.github.io/Slate/ToolbarActions.css");
+/*
+  Basic Variables
+  See available vars here: https://github.com/DiscordStyles/Slate/wiki
+*/
+:root {
+  /* Primary Colors */
+  --accent: 3, 102, 214;
+  --link-colour: 48, 144, 255;
+  /* Server List */
+  --server-icon-size: 35px;
+  --server-icon-spacing: 8px;
+  --server-container-padding: 10px;
+}
+
+/**
+  Custom CSS below here
+*/
