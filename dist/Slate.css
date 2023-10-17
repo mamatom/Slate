@@ -3533,7 +3533,7 @@ html:not(.app-focused) body:not(.oldTitleBarEnabled-D8ppJQ) .winButton-3UMjdg {
 
 #app-mount .form-3qe0Ni {
   box-sizing: border-box;
-  padding: var(--spacing) var(--spacing) var(--spacing) calc(var(--spacing-double) + var(--avatar-size-sm));
+  padding: calc(var(--spacing) / 2) var(--spacing) calc(var(--spacing) / 2) calc(var(--spacing-double) + var(--avatar-size));
   border-top: 1px solid var(--base-border);
   display: flex;
   align-items: center;
