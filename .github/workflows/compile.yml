@@ -1,6 +1,9 @@
 name: 'Compile SCSS'
 
-on: 'push'
+on: ['push', 'workflow_dispatch']
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -8,13 +11,13 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'Checkout Repo'
-        uses: 'actions/checkout@v2'
+        uses: 'actions/checkout@v4'
       - name: 'Setup NodeJS'
-        uses: 'actions/setup-node@v1'
+        uses: 'actions/setup-node@v3'
         with:
           node-version: 16
       - name: 'Install PNPM'
-        uses: 'pnpm/action-setup@v2.1.0'
+        uses: 'pnpm/action-setup@v2'
         with:
           version: 6.0.2
       - name: 'Clean install of dependencies'
