@@ -3,6 +3,10 @@
 	--container: calc(var(--icon) + calc(var(--server-container-padding) * 2));
 }
 
+#app-mount .homeIcon-r0w4ny{
+	width: 32px;/*TODO no hardcode here!*/
+}
+
 .guilds-2JjMmN {
 	width: var(--container);
 	.scrollerWrap-1IAIlv {
@@ -79,7 +83,8 @@
 	}
 }
 
-#app-mount .privateChannels-oVe7HL .searchBar-3TnChZ{
+#app-mount .privateChannels-oVe7HL .searchBar-3TnChZ,
+#app-mount .sidebar-1tnWFu .header-3OsQeK{
 	left:0;
 	width: 100%;
 }
