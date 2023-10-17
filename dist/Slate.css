@@ -1956,7 +1956,7 @@ html:not(.app-focused) body:not(.oldTitleBarEnabled-D8ppJQ) .winButton-3UMjdg {
 #app-mount .panels-3wFtMD > .container-1CH86i .nameTag-2Q56-H {
   display: none;
 }
-#app-mount .panels-3wFtMD > .container-1CH86i .directionRow-2Iu2A9 {
+#app-mount .panels-3wFtMD > .container-1CH86i .flex-2S1XBF {
   display: flex;
   width: 100%;
   background: var(--background);
