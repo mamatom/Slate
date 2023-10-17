@@ -5209,27 +5209,27 @@ html.theme-light #app-mount .reactions-1BUEKl .reaction-1hd86g:not(.reactionMe-1
   padding: 0;
 }
 
-#app-mount .container-2o3qEW {
+#app-mount .container-2vWgD2 {
   background: var(--background);
 }
-#app-mount .membersWrap-3NUR2t {
+#app-mount .membersWrap-3GwLFp {
   width: var(--sidebar-width);
   border-left: 1px solid var(--base-border);
   background: var(--background);
   min-width: unset;
 }
-#app-mount .members-3WRCEx {
+#app-mount .members-2y1nVj {
   background: transparent;
   width: 100%;
 }
-#app-mount .members-3WRCEx > div {
+#app-mount .members-2y1nVj > div {
   background: transparent;
 }
-#app-mount .members-3WRCEx::-webkit-scrollbar {
+#app-mount .members-2y1nVj::-webkit-scrollbar {
   display: none;
 }
 
-#app-mount .members-3WRCEx .membersGroup-2eiWxl {
+#app-mount .members-2y1nVj .membersGroup-2YoqY {
   padding: var(--spacing);
   height: auto;
   font-size: var(--font-size-sm);
