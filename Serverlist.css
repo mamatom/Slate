@@ -1,30 +1,16 @@
+/* ### Powered by DiscordSelectors v0.2.7 ### */
 :root {
   --icon: var(--server-icon-size, var(--ASW_size, 35px));
   --container: calc(var(--icon) + calc(var(--server-container-padding) * 2));
 }
 
-#app-mount .homeIcon-r0w4ny {
-  width: 32px; /*TODO no hardcode here!*/
-}
-
 .guilds-2JjMmN {
   width: var(--container);
-}
-.guilds-2JjMmN .scrollerWrap-1IAIlv {
-  width: calc(100% + 30px);
 }
 .guilds-2JjMmN [role=group] {
   height: auto !important;
 }
-.guilds-2JjMmN .placeholderMask-3K9THS {
-  width: var(--icon);
-  height: var(--icon);
-}
-.guilds-2JjMmN .listItem-3SmSlK {
-  width: var(--container);
-  margin-bottom: var(--server-icon-spacing);
-}
-.guilds-2JjMmN .scrollerBase-1Pkza4 > div[style]:not(.listItem-3SmSlK):not([style*=absolute]) {
+.guilds-2JjMmN .scrollerBase-1Pkza4 > div[style]:not([style*=absolute]) {
   height: calc(var(--icon) + var(--server-icon-spacing)) !important;
 }
 .guilds-2JjMmN [class*=pill] {
@@ -163,7 +149,6 @@
 .guilds-2JjMmN [class*=unreadMentionsIndicator] {
   width: 100%;
 }
-.guilds-2JjMmN .guildsError-b7zR5H,
 .guilds-2JjMmN .svg-2ifYOU,
 .guilds-2JjMmN .wrapper-2PSQCG {
   width: var(--icon);
@@ -173,22 +158,4 @@
   border-radius: 50%;
   height: calc(var(--icon) / 3);
   width: calc(var(--icon) / 3);
-}
-.guilds-2JjMmN .wrapper-38slSD {
-  width: var(--container);
-}
-.guilds-2JjMmN .wrapper-38slSD .folder-241Joy,
-.guilds-2JjMmN .wrapper-38slSD .folderIconWrapper-1oRIZr {
-  background: transparent;
-}
-.guilds-2JjMmN .wrapper-38slSD .expandedFolderBackground-1kSAf6 {
-  left: 50%;
-  transform: translateX(-50%);
-  width: var(--server-icon-size);
-}
-
-#app-mount .privateChannels-oVe7HL .searchBar-3TnChZ,
-#app-mount .sidebar-1tnWFu .header-3OsQeK {
-  left: 0;
-  width: 100%;
 }
