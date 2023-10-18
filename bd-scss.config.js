@@ -1,7 +1,7 @@
 /** @type {import('bd-scss/lib/config').Config} */
 export default {
 	meta: {
-		name: 'Slate',
+		name: 'Slate-mamatom',
 		author: 'mamatom',
 		description: `A fork of DiscordStyles/Slate`,
 		version: '1.2',
