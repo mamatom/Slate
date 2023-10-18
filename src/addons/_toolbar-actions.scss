@@ -1,3 +1,4 @@
+@use '../../lib/selectors/selectorPlaceholders';
 html%platformWin[lang='en-US'],
 html%platformWin[lang='en-GB'] {
 	body:not(.oldTitleBarEnabled-D8ppJQ)
