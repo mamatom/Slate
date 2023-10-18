@@ -16,7 +16,7 @@
 	.wrapper-3u51GQ {
 		z-index: 10;
 	}
-	.emojiPicker-6YCk8a {
+	%emojiPicker {
 		height: 442px;
 		grid-template-rows: 46px auto 49px;
 		grid-template-columns: 38px auto;
@@ -27,7 +27,7 @@
 		border-radius: var(--border-radius);
 		display: block;
 		box-shadow: var(--elevation-1);
-		.scroller-2FKFPG {
+		%scroller {
 			height: 396px;
 		}
 	}
@@ -47,7 +47,7 @@
 		transition: none;
 		cursor: var(--cursor);
 		border-radius: var(--border-radius);
-		.contents-3ca1mk {
+		%forumTagClear {
 			font-size: 0;
 			height: 16px;
 			width: 16px;
@@ -58,25 +58,25 @@
 		}
 		&.navButtonActive-1EqC5l {
 			background: rgb(var(--accent));
-			.contents-3ca1mk {
+			%forumTagClear {
 				opacity: 1;
 				background: var(--white);
 			}
 		}
-		&[aria-controls='gif-picker-tab-panel'] .contents-3ca1mk {
+		&[aria-controls='gif-picker-tab-panel'] %forumTagClear {
 			mask: url(assets.$icon_image) center/cover no-repeat;
 		}
-		&[aria-controls='sticker-picker-tab-panel'] .contents-3ca1mk {
+		&[aria-controls='sticker-picker-tab-panel'] %forumTagClear {
 			mask: url(assets.$icon_star) center/cover no-repeat;
 		}
-		&[aria-controls='emoji-picker-tab-panel'] .contents-3ca1mk {
+		&[aria-controls='emoji-picker-tab-panel'] %forumTagClear {
 			mask: url(assets.$icon_face) center/cover no-repeat;
 		}
 	}
 
 	// Header (Search)
-	.header-JHwfVI,
-	.header-11eigE,
+	%gifPickerHeader,
+	%emojiPickerHeader,
 	.header-uVCAlo,
 	.header-2TLOnc {
 		padding: var(--spacing);
@@ -86,20 +86,20 @@
 		grid-gap: var(--spacing);
 		padding-left: 115px;
 	}
-	.container-1SX9VC,
-	.container-2oNtJn {
+	%stickerSearchContainer,
+	%librarySearchBar {
 		background: transparent;
 		border-radius: 0;
 		overflow: visible;
 	}
-	.inner-2pOSmK,
-	.inner-1NoIT5 {
+	%gifPickerSearchBarInner,
+	%groupInvitePopoutSearchBarInner {
 		padding: 0;
 		overflow: visible !important;
 	}
-	.input-2FSSDe,
-	.input-2m5SfJ,
-	.input-2FSSDe {
+	%popoutInput,
+	%gifPickerSearchInput,
+	%popoutInput {
 		box-sizing: border-box;
 		height: var(--input-height);
 		background-color: var(--background-dark);
@@ -117,19 +117,19 @@
 		}
 	}
 	.iconLayout-SqV3nb,
-	.iconLayout-3Bjizv {
+	%gifPickerSearchIconLayout {
 		width: fit-content;
 		order: -1;
 		position: absolute;
 		height: var(--input-height);
 		left: var(--spacing-half);
 		.iconContainer-1RqWJj,
-		.iconContainer-6pgShY {
+		%gifPickerSearchIconContainer {
 			height: 14px;
 			width: 14px;
 			cursor: var(--cursor);
 			.icon-18rqoe,
-			.icon-3CDcPB {
+			%gifPickerSearchIcon {
 				color: var(--toolbar-text-muted);
 				transition: none;
 				path[d='M21.707 20.293L16.314 14.9C17.403 13.504 18 11.799 18 10C18 7.863 17.167 5.854 15.656 4.344C14.146 2.832 12.137 2 10 2C7.863 2 5.854 2.832 4.344 4.344C2.833 5.854 2 7.863 2 10C2 12.137 2.833 14.146 4.344 15.656C5.854 17.168 7.863 18 10 18C11.799 18 13.504 17.404 14.9 16.314L20.293 21.706L21.707 20.293ZM10 16C8.397 16 6.891 15.376 5.758 14.243C4.624 13.11 4 11.603 4 10C4 8.398 4.624 6.891 5.758 5.758C6.891 4.624 8.397 4 10 4C11.603 4 13.109 4.624 14.242 5.758C15.376 6.891 16 8.398 16 10C16 11.603 15.376 13.11 14.242 14.243C13.109 15.376 11.603 16 10 16Z'] {
@@ -152,20 +152,20 @@
 		height: 20px;
 		margin-right: 0;
 	}
-	.diversitySelectorPopout-3FiGaM {
+	%emojiPickerDiversitySelectorPopout {
 		background: var(--background-dark);
 		border: 1px solid var(--base-border);
 		height: auto !important;
 		border-radius: var(--border-radius);
 	}
-	.diversityEmojiItem-2bgZKv {
+	%emojiPickerDiversityItem {
 		width: 20px;
 		height: 20px;
 		border-radius: 0;
 	}
 
 	// Server picker list (left side)
-	.categoryList-2qRrlj {
+	%emojiCategoryList {
 		border-right: 1px solid var(--base-border);
 		border-top: none;
 		background: var(--background-dark);
@@ -173,7 +173,7 @@
 		top: 46px;
 		border-bottom-left-radius: var(--border-radius);
 	}
-	.categoryItem-1sHzUv {
+	%emojiCategoryItem {
 		width: 100%;
 		box-sizing: border-box;
 		padding: 0 var(--spacing);
@@ -192,7 +192,7 @@
 				mask: none;
 			}
 		}
-		.guildIcon-2SUGiq {
+		%emojiCategoryGuildIcon {
 			border-radius: var(--border-radius);
 			width: 100%;
 			height: 100%;
@@ -205,8 +205,8 @@
 			background: var(--background-modifier-active);
 		}
 	}
-	.categoryItemDefaultCategorySelected-2YeRUu,
-	.categoryItemDefaultCategorySelected-2YeRUu:hover {
+	%emojiCategoryItemSelected,
+	%emojiCategoryItemSelected:hover {
 		background: rgb(var(--accent));
 		svg {
 			color: var(--white);
@@ -216,7 +216,7 @@
 		margin: var(--spacing) 0;
 		border-bottom-color: var(--base-border);
 	}
-	.unicodeShortcut-3N8oDe {
+	%emojiCategoryUnicodeShortcut {
 		height: 49px;
 		border-top: 1px solid var(--base-border);
 		box-sizing: border-box;
@@ -237,20 +237,20 @@
 
 	// Emote list (right side)
 	#emoji-picker-tab-panel {
-		.listItems-6eZzQ1 {
+		%autocompleteListItems {
 			margin-left: -8px;
 			margin-top: -8px;
 			width: 100%;
 		}
-		.wrapper-1NNaWG {
+		%emojiPickerCategoryHeaderWrapper {
 			margin-bottom: var(--spacing);
 		}
 	}
-	.container-2Qb0ED,
-	.results-3OoWM- {
+	%gifPickerContainer,
+	%gifPickerResults {
 		height: 398px;
 	}
-	.wrapper-1NNaWG {
+	%emojiPickerCategoryHeaderWrapper {
 		background: var(--background);
 		padding: 0 var(--spacing);
 		border-bottom: 1px solid var(--base-border);
@@ -258,7 +258,7 @@
 		background: var(--background-light);
 		cursor: var(--cursor);
 		height: var(--item-height);
-		.header-1XpmZs {
+		%emojiPickerCategoryHeader {
 			cursor: var(--cursor);
 			display: flex;
 			width: 100%;
@@ -279,16 +279,16 @@
 		}
 		foreignObject {
 			mask: none;
-			.guildIcon-2SUGiq {
+			%emojiCategoryGuildIcon {
 				border-radius: var(--border-radius);
 			}
 		}
 	}
-	.categorySection-3j71bm {
+	%emojiPickerCategorySection {
 		margin: var(--spacing) 0 var(--spacing-double);
 		&:first-child {
 			margin-top: 0;
-			.wrapper-1NNaWG {
+			%emojiPickerCategoryHeaderWrapper {
 				border-top: none;
 			}
 		}
@@ -296,25 +296,25 @@
 	.emojiListRow-3hshyU {
 		padding: 0 var(--spacing);
 	}
-	.emojiItem-277VFM {
+	%emojiPickerItem {
 		border-radius: var(--border-radius);
 		cursor: var(--cursor);
-		&.emojiItemSelected-2Lg50V {
+		&%emojiPickerItemSelected {
 			background: var(--background-modifier-hover);
 		}
-		&.emojiItemDisabled-3VVnwp {
+		&%emojiPickerItemDisabled {
 			filter: none;
 			opacity: 0.2;
 			pointer-events: none;
 		}
-		.imageLoading-2uloYN {
+		%emojiPickerItemLoading {
 			display: none;
 		}
 	}
 
 	// Hovered emote info
 	.inspector-2A2Chb,
-	.inspector-DFKXwB {
+	%emojiPickerInspector {
 		background: var(--background);
 		border-top: 1px solid var(--base-border);
 		padding: var(--spacing);
@@ -328,7 +328,7 @@
 			foreignObject {
 				mask: none;
 			}
-			.guildIcon-2SUGiq {
+			%emojiCategoryGuildIcon {
 				width: var(--avatar-size);
 				height: var(--avatar-size);
 				border-radius: var(--border-radius);
@@ -418,11 +418,11 @@
 
 	// Gif Picker
 	#gif-picker-tab-panel {
-		.content-1CboaJ::after,
-		&.container-23gRWx::after {
+		%gifPickerContent::after,
+		&%gifPicker::after {
 			content: none;
 		}
-		.content-A8TzKf {
+		%gifPickerContent {
 			height: 394px;
 		}
 	}
@@ -432,7 +432,7 @@
 		height: 442px;
 		grid-template-columns: 39px auto;
 	}
-	#sticker-picker-grid .listItems-6eZzQ1 {
+	#sticker-picker-grid %autocompleteListItems {
 		margin-left: -8px;
 	}
 	.categoryList-2GgCrD {
@@ -441,7 +441,7 @@
 		background: var(--background-dark);
 		width: 38px;
 		top: 45px;
-		.listItems-6eZzQ1 {
+		%autocompleteListItems {
 			top: 0 !important;
 			right: 0 !important;
 			bottom: 0 !important;
@@ -471,25 +471,25 @@
 			background: rgb(var(--accent));
 		}
 	}
-	.inspectedIndicator-27zwNZ {
+	%stickerPickerInspectedIndicator {
 		mask: none;
 		border-radius: var(--border-radius);
 		background: transparent;
 		padding: 0;
 	}
-	.stickerInspected-mwnU6w {
+	%stickerPickerInspected {
 		background: var(--background-modifier-hover);
 	}
 
 	// Fixed gif scrollbar.
-	.container-3eG4QA {
+	%gifPickerContainer {
 		height: 396px;
 	}
 }
 
 // Light Mode
 
-html.theme-light #app-mount .input-2FSSDe,
-html.theme-light #app-mount .input-2m5SfJ {
+html%themeLight #app-mount %popoutInput,
+html%themeLight #app-mount %gifPickerSearchInput {
 	background: var(--background);
 }

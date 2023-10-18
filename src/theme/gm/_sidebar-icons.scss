@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .sidebar-nqHbhN .item-3XjbnG {
+#app-mount %settingsSidebar %topPillItem {
 	&[aria-controls='gm-settings-tab'] {
 		font-size: 0 !important;
 		&::before {

@@ -1,7 +1,7 @@
 #app-mount {
 	// Remove Checkbox Styling
-	.container-2nx-BQ,
-	.checkboxWrapper-2fDzaA {
+	%switchContainer,
+	%checkboxWrapper {
 		width: auto;
 		border-radius: 0;
 		background: transparent !important;
@@ -9,10 +9,10 @@
 		align-items: center;
 		box-shadow: none;
 		cursor: var(--cursor);
-		.slider-32CRPX {
+		%switchSlider {
 			display: none;
 		}
-		.input-2XRLou,
+		%switchCheckbox,
 		.input-3xr72x {
 			margin: 0;
 			opacity: 1;
@@ -23,7 +23,7 @@
 			appearance: checkbox;
 		}
 	}
-	.checkboxWrapper-2fDzaA {
+	%checkboxWrapper {
 		width: auto;
 		.labelForward-2yqkcf {
 			padding-left: var(--spacing-half);
@@ -33,12 +33,12 @@
 			}
 		}
 	}
-	.checkbox-f1HnKB {
+	%checkbox {
 		display: none;
 	}
 
 	// Secondary Checkbox Elements
-	.checkbox-1ycfTw .checkboxInner-1aRh1d .checkboxElement-uwAa9F:checked & + span {
+	%deleteServerCheckbox %deleteServerCheckboxInner %deleteServerCheckboxElement:checked & + span {
 		background-color: var(--accent-solid);
 		border-color: var(--accent-solid);
 	}

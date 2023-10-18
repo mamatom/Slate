@@ -22,7 +22,7 @@
 		margin-bottom: var(--spacing);
 	}
 
-	.childWrapper-1j_1ub {
+	%guildChildWrapper {
 		background: var(--background-light);
 		border-radius: var(--server-radius);
 		font-size: 1em;
@@ -30,17 +30,17 @@
 		overflow: hidden;
 		cursor: var(--cursor);
 	}
-	.wrapper-38slSD,
+	%guildFolderWrapper,
 	.wrapper-2PSQCG {
 		cursor: var(--cursor);
 		border-radius: var(--server-radius);
 		overflow: hidden;
 		// background: var(--background-light);
 		transition: 150ms ease;
-		&.selected-1JjBPm,
-		&.selected-1Drb7Z {
+		&%circleIconButtonSelected,
+		&%guildLinkSelected {
 			background: var(--accent-solid);
-			.icon-3AqZ2e[src*='/assets/'] {
+			%guildIcon[src*='/assets/'] {
 				background: var(--white);
 				transition: 150ms ease;
 			}
@@ -49,12 +49,12 @@
 			mask: none;
 		}
 	}
-	.wrapper-38slSD .selected-1JjBPm .childWrapper-1j_1ub,
-	.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+	%guildFolderWrapper %circleIconButtonSelected %guildChildWrapper,
+	%guildLink%guildLinkSelected %guildChildWrapper {
 		background: var(--accent-solid);
 		color: var(--text-focus);
 	}
-	.circleIconButton-1VxDrg {
+	%circleIconButton {
 		background: var(--background-light);
 		color: var(--text-normal);
 		cursor: var(--cursor);
@@ -63,19 +63,19 @@
 			d: path(assets.$path_add);
 			transform: scale(1.25) translateX(3px) translateY(2px);
 		}
-		&.selected-2r1Hvo {
+		&%circleIconButtonSelected {
 			background-color: var(--accent-solid) !important;
 			color: #fff;
 		}
 	}
 	.wrapper-2PSQCG {
 		overflow: visible;
-		.numberBadge-37OJ3S {
+		%numberBadge {
 			position: relative;
 			top: 3px;
 			left: 3px;
 		}
-		.icon-3AqZ2e[src*='/assets/'] {
+		%guildIcon[src*='/assets/'] {
 			content: url(assets.$blank);
 			background: var(--text-muted);
 			mask: url(assets.$icon_person) center/40% no-repeat;
@@ -89,15 +89,15 @@
 			}
 		}
 	}
-	.folderIconWrapper-1oRIZr,
+	%guildFolderIconWrapper,
 	.guildIconUnavailable-5PMHDN,
-	.guildsError-b7zR5HX,
-	.expandedFolderBackground-1cujaW,
-	.folderIconWrapper-1_bOZe,
-	.guildIcon-2Tpnad,
-	.guildIcon-2I5sfu,
+	%guildsErrorX,
+	%guildFolderBackground,
+	%guildFolderIconWrapper,
+	%guildFolderGuildIcon,
+	%guildFolderGuildIcon,
 	.guildIconUnavailable-3IYARS,
-	.guildsError-g6NwOI {
+	%guildsError {
 		border-radius: var(--server-radius);
 	}
 	.wrapper-z5ab_q {
@@ -112,7 +112,7 @@
 
 	// Home button
 	.tutorialContainer-1pL9QS {
-		.childWrapper-1j_1ub {
+		%guildChildWrapper {
 			background: transparent !important;
 		}
 		[class*='pill'] {
@@ -123,11 +123,11 @@
 			align-items: center;
 			height: var(--toolbar-height);
 			background: transparent !important;
-			.wrapper-38slSD {
+			%guildFolderWrapper {
 				background: transparent !important;
 			}
 		}
-		.listItem-3SmSlK {
+		%guild {
 			margin-bottom: 0;
 		}
 		.svg-2ifYOU {
@@ -136,20 +136,20 @@
 			left: 50%;
 			transform: translateX(-50%);
 		}
-		.lowerBadge-3WTshO {
+		%guildBadgeLower {
 			margin-bottom: 28px;
 			margin-right: 5px;
-			.numberBadge-37OJ3S {
+			%numberBadge {
 				box-shadow: 0 0 0 3px var(--guilds-background);
 			}
 		}
-		.upperBadge-1V6Iyi {
+		%guildBadgeUpper {
 			top: 5px;
 			right: 0px;
 			transform: none !important;
 		}
 	}
-	.homeIcon-r0w4ny {
+	%homeIcon {
 		mask: url(assets.$icon_home) center/65% no-repeat;
 		background: var(--text-normal);
 		width: 100%;
@@ -159,15 +159,15 @@
 			display: none;
 		}
 	}
-	.selected-1JjBPm .homeIcon-r0w4ny,
-	.selected-1Drb7Z .homeIcon-r0w4ny {
+	%circleIconButtonSelected %homeIcon,
+	%guildLinkSelected %homeIcon {
 		background: var(--text-focus);
 	}
 
 	// Badges
 	.iconBadge-2wWu5e,
 	.unavailableBadge-3k7iq_,
-	.iconBadge-3qSJIw,
+	%guildBadgeIcon,
 	.unavailableBadge-20E5O2 {
 		position: absolute;
 		top: 0;
@@ -192,7 +192,7 @@
 	.unreadMentionsIndicatorBottom-BXS58x,
 	.unreadMentionsIndicatorBottom-3RJMnQ,
 	.unreadMentionsIndicatorTop-gA6RCh,
-	.unreadMentionsIndicatorTop-2bTgUU {
+	%guildUnreadMentionsTop {
 		padding: 0;
 		.active-334r9u:active {
 			top: 0;
@@ -219,7 +219,7 @@
 		height: auto;
 		width: auto;
 	}
-	.unreadMentionsIndicatorTop-2bTgUU {
+	%guildUnreadMentionsTop {
 		top: var(--toolbar-height);
 	}
 }

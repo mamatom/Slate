@@ -1,24 +1,24 @@
 #app-mount {
-	.indicator-9QMksR[data-tutorial-id='direct-messages'] {
+	%indicator[data-tutorial-id='direct-messages'] {
 		margin-top: 44px;
 		margin-left: 13px;
 	}
-	.indicator-9QMksR[data-tutorial-id='create-first-server'] {
+	%indicator[data-tutorial-id='create-first-server'] {
 		margin-top: -6px;
 		margin-left: -22px;
 	}
-	.outerCircle-2Uqqis,
+	%indicatorCircleOuter,
 	[data-tutorial-id='organize-by-topic'],
 	[data-tutorial-id='voice-conversations'],
 	[data-tutorial-id='instant-invite'] {
 		display: none;
 	}
-	.innerCircle-2zWLZe {
+	%indicatorCircleInner {
 		background: var(--accent-solid);
 		mask: url(/assets/5d7b0c4b2a82d63d829b6ea591853c22.svg) 50% no-repeat;
 	}
-	.bottom-3Mou5l,
-	.top-1orLYG {
+	%indicatorExclamationBottom,
+	%indicatorExclamationTop {
 		display: none;
 	}
 }

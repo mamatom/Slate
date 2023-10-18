@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .keyboardShortcutsModal-2CRmCm {
+#app-mount %keyboardShortcutsModal {
 	background: var(--background);
 	box-shadow: var(--elevation-2);
 	border: 1px solid var(--base-border);
@@ -23,11 +23,11 @@
 		.content-1i_k8f {
 			margin-right: var(--spacing);
 		}
-		.keybindShortcut-3zF1P9 {
+		%keybindShortcut {
 			margin: 0;
 		}
 	}
-	.keybindShortcut-3zF1P9 {
+	%keybindShortcut {
 		font-size: var(--font-size-sm);
 		height: fit-content;
 		color: var(--text-normal);

@@ -3,27 +3,27 @@
 	--container: calc(var(--icon) + calc(var(--server-container-padding) * 2));
 }
 
-#app-mount .homeIcon-r0w4ny{
+#app-mount %homeIcon{
 	width: 32px;/*TODO no hardcode here!*/
 }
 
 .guilds-2JjMmN {
 	width: var(--container);
-	.scrollerWrap-1IAIlv {
+	%guildsScrollerWrap {
 		width: calc(100% + 30px);
 	}
 	[role='group'] {
 		height: auto !important;
 	}
-	.placeholderMask-3K9THS {
+	%guildPlaceholderMask {
 		width: var(--icon);
 		height: var(--icon);
 	}
-	.listItem-3SmSlK {
+	%guild {
 		width: var(--container);
 		margin-bottom: var(--server-icon-spacing);
 	}
-	.scrollerBase-1Pkza4 > div[style]:not(.listItem-3SmSlK):not([style*='absolute']) {
+	.scrollerBase-1Pkza4 > div[style]:not(%guild):not([style*='absolute']) {
 		height: calc(var(--icon) + var(--server-icon-spacing)) !important;
 	}
 	[class*='pill'] {
@@ -57,7 +57,7 @@
 	[class*='unreadMentionsIndicator'] {
 		width: 100%;
 	}
-	.guildsError-b7zR5H,
+	%guildsError,
 	.svg-2ifYOU,
 	.wrapper-2PSQCG {
 		width: var(--icon);
@@ -69,13 +69,13 @@
 		width: calc(var(--icon) / 3);
 	}
 	// Folders
-	.wrapper-38slSD {
+	%guildFolderWrapper {
 		width: var(--container);
-		.folder-241Joy,
-		.folderIconWrapper-1oRIZr {
+		%guildFolder,
+		%guildFolderIconWrapper {
 			background: transparent;
 		}
-		.expandedFolderBackground-1kSAf6 {
+		%guildExpandedFolderBackground {
 			left: 50%;
 			transform: translateX(-50%);
 			width: var(--server-icon-size);
@@ -83,8 +83,8 @@
 	}
 }
 
-#app-mount .privateChannels-oVe7HL .searchBar-3TnChZ,
-#app-mount .sidebar-1tnWFu .header-3OsQeK{
+#app-mount %privateChannels %privateChannelsSearchBar,
+#app-mount %channelsSidebar %channelsHeader{
 	left:0;
 	width: 100%;
 }

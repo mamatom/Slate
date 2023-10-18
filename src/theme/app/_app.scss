@@ -6,8 +6,8 @@ html {
 	line-height: var(--line-height);
 }
 
-.app-2CXKsg,
-.bg-1QIAus {
+%shakeable,
+%bg {
 	background: var(--background);
 	transform: none !important;
 	top: 0 !important;
@@ -18,20 +18,20 @@ body {
 
 #app-mount {
 	background: var(--background);
-	.base-2jDfDU {
+	%base {
 		border-radius: 0;
 		overflow: visible !important;
 	}
-	.layers-OrUESM {
+	%layers {
 		z-index: 11;
 		overflow: visible;
 	}
-	.layer-86YKbF {
+	%layer {
 		opacity: 1 !important;
 		transform: none !important;
 		top: 0;
 		padding-top: 0;
-		&.animating-1rIrGV {
+		&%layerAnimating {
 			pointer-events: all;
 			will-change: unset;
 			* {
@@ -44,7 +44,7 @@ body {
 	}
 
 	// Mentions/Channel jump
-	.mention {
+	%mention {
 		background: rgb(var(--accent), 0.15);
 		border-radius: var(--border-radius);
 		color: var(--accent-solid);
@@ -65,12 +65,12 @@ body {
 	}
 
 	// Remove box-shadow from chat
-	.content-1jQy2l::before {
+	%chatContentWrapper::before {
 		content: none;
 	}
 
 	// Remove cursor pointer
-	.interactive-1vLZ_I {
+	%mentionedInteractive-1vLZ_I {
 		cursor: var(--cursor);
 	}
 }

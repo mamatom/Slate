@@ -23,7 +23,7 @@
 	}
 	.emojiButtonContainer-gCE6AT {
 		margin-left: var(--spacing);
-		.emojiButton-3FRTuj {
+		%channelTextAreaEmojiButton {
 			cursor: var(--cursor);
 			padding: 0;
 			.sprite-2lxwfc {
@@ -39,7 +39,7 @@
 				background: var(--text-normal);
 			}
 		}
-		& + .inputWrapper-1YNMmM .input-2g-os5 {
+		& + %inputWrapper %input {
 			padding-left: calc(var(--spacing-triple) + var(--spacing));
 		}
 	}

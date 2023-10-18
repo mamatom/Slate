@@ -34,7 +34,7 @@
 		[class*='option'] {
 			padding: var(--spacing);
 			min-height: auto;
-			&.css-rzbxvl-option {
+			&%pruneMemberMenuDropdown {
 				background: var(--background-modifier-hover);
 			}
 			&.css-1ba14n5-option {
@@ -47,7 +47,7 @@
 	}
 
 	// New select, used for Custom Status (why Discord?)
-	.select-1Ia3hD {
+	%eventTimeSelect {
 		border: 1px solid var(--base-border);
 		border-radius: var(--border-radius);
 		background: var(--background-dark);
@@ -126,6 +126,6 @@
 }
 
 // Light Mode
-.theme-light #app-mount [class*='css'][class*='control'] {
+%themeLight #app-mount [class*='css'][class*='control'] {
 	background: var(--background);
 }

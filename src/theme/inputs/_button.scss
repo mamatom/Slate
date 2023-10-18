@@ -1,10 +1,10 @@
 #app-mount {
-	.lookFilled-yCfaCM,
-	.lookInverted-2D7oAl,
-	.lookLink-9FtZy-,
-	.lookOutlined-3sRXeN,
+	%buttonFilled,
+	%buttonInverted,
+	%buttonLink,
+	%buttonOutlined,
 	.lookGhost-2Fn_0-,
-	.colorPrimary-3b3xI6.lookLink-9FtZy-,
+	%buttonPrimary%buttonLink,
 	.bd-modal-wrapper .footer button,
 	.button-f2h6uQ {
 		font-size: var(--font-size);
@@ -21,7 +21,7 @@
 			margin-right: var(--spacing-half);
 		}
 	}
-	.lookFilled-yCfaCM:not(.colorGrey-2DXtkV),
+	%buttonFilled:not(%buttonColorGrey),
 	.bd-modal-wrapper .footer button,
 	.primaryButton-361sHl {
 		color: var(--white);
@@ -34,13 +34,13 @@
 			box-shadow: 0 0 0 2px rgb(var(--accent), 0.25), inset 0 0 0 100vmax rgb(255, 255, 255, 0.1);
 		}
 	}
-	.lookLink-9FtZy- {
+	%buttonLink {
 		padding: 0;
 		color: var(--text-link);
 		height: auto;
 		min-height: unset;
 		cursor: pointer;
-		&:hover .contents-3ca1mk {
+		&:hover %forumTagClear {
 			background-image: none !important;
 			text-decoration: underline;
 		}
@@ -56,15 +56,15 @@
 	.secondaryButton-rBY2Kw {
 		flex: 0;
 	}
-	.colorPrimary-3b3xI6.lookLink-9FtZy-,
-	.colorPrimary-3b3xI6.lookFilled-yCfaCM,
-	.lookInverted-2D7oAl,
-	.lookOutlined-3sRXeN,
+	%buttonPrimary%buttonLink,
+	%buttonPrimary%buttonFilled,
+	%buttonInverted,
+	%buttonOutlined,
 	.secondaryButton-rBY2Kw,
-	.actionButton-3-B2x-,
+	%friendActionButton,
 	.lookGhost-2Fn_0-,
 	.cancelButton-1vsI8S,
-	.colorGrey-2DXtkV {
+	%buttonColorGrey {
 		color: var(--text-normal);
 		background: var(--background-light);
 		border: 1px solid var(--base-border);
@@ -72,7 +72,7 @@
 		cursor: var(--cursor);
 		&:hover {
 			border: 1px solid currentColor;
-			.contents-3ca1mk {
+			%forumTagClear {
 				text-decoration: none;
 			}
 		}
@@ -82,7 +82,7 @@
 		}
 
 		&.removeButton-v6eolJ,
-		&.colorRed-1TFJan {
+		&%buttonRed {
 			color: rgb(var(--red));
 		}
 	}
@@ -94,14 +94,14 @@
 }
 
 // Light mode buttons
-html.theme-light #app-mount {
-	.colorPrimary-3b3xI6.lookLink-9FtZy-,
-	.colorPrimary-3b3xI6.lookFilled-yCfaCM,
-	.lookInverted-2D7oAl,
-	.lookOutlined-3sRXeN,
+html%themeLight #app-mount {
+	%buttonPrimary%buttonLink,
+	%buttonPrimary%buttonFilled,
+	%buttonInverted,
+	%buttonOutlined,
 	.lookGhost-2Fn_0-,
 	.secondaryButton-rBY2Kw,
-	.actionButton-3-B2x-,
+	%friendActionButton,
 	.cancelButton-1vsI8S {
 		&:hover {
 			background: var(--background);

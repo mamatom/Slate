@@ -1,5 +1,5 @@
 #app-mount {
-	.searchResultsWrap-5RVOkx {
+	%searchResultsWrap {
 		background-color: var(--background);
 		border-left: 1px solid var(--base-border);
 		box-sizing: border-box;
@@ -12,12 +12,12 @@
 			}
 		}
 	}
-	.searchHeader-1r_ZSh {
+	%searchHeader {
 		background: var(--background-alt);
 		border-bottom: 1px solid var(--base-border);
 		padding: var(--spacing);
 		height: auto;
-		.item-3XjbnG {
+		%topPillItem {
 			margin: 0;
 			display: flex;
 			align-items: center;
@@ -44,7 +44,7 @@
 				border-color: currentColor;
 			}
 
-			&.selected-g-kMVV {
+			&%topPillItemSelected {
 				background: rgb(var(--accent), 1) !important;
 				color: var(--white);
 				border-color: rgb(var(--accent), 1) !important;
@@ -67,22 +67,22 @@
 			border-bottom: 1px solid var(--base-border);
 		}
 	}
-	.channelName-3w2Y3c {
+	%searchChannelName {
 		background: var(--background-light);
 		margin-bottom: 0;
 		padding: var(--spacing);
 		border-top: 1px solid var(--base-border);
 		font-size: var(--font-size-md);
 	}
-	.searchResult-O9NDji {
+	%searchResult {
 		background: transparent;
 		border-top: 1px solid var(--base-border);
 		border-radius: 0;
 		margin: 0;
 	}
-	.pageControlContainer-6nt7kY {
+	%pageControlContainer {
 		margin: 0;
-		.pageControl-1XvHg0 {
+		%pageControl {
 			padding: var(--spacing);
 			margin: 0;
 			width: 100%;
@@ -90,7 +90,7 @@
 			justify-content: space-around;
 		}
 		button,
-		.pageButton-1GMGeJ {
+		%pageButton {
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
 			min-height: var(--input-height);
@@ -113,7 +113,7 @@
 				border: 1px solid currentColor;
 			}
 
-			&.activeButton-LRWFC_ {
+			&%pageButtonActive {
 				background: rgb(var(--accent), 1);
 				color: var(--white);
 				border-color: rgb(var(--accent), 1);
@@ -129,15 +129,15 @@
 	}
 	.container-rZM65Y .message-24k8JL {
 		padding: 16px 0 0;
-		.avatar-2e8lTP {
+		%avatarLarge {
 			top: var(--spacing-half);
 		}
 	}
 }
 
-html.theme-light #app-mount {
-	.pageControlContainer-6nt7kY button,
-	.tab-2j5AEF {
+html%themeLight #app-mount {
+	%pageControlContainer button,
+	%searchTab {
 		&:hover {
 			background: var(--background);
 			border: 1px solid var(--secondary-border);

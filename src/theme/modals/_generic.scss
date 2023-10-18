@@ -1,7 +1,7 @@
 @use '../assets';
 
 #app-mount {
-	.backdrop-2ByYRN,
+	%backdrop,
 	.backdropWithLayer-3_uhz4 {
 		background: var(--backdrop) !important;
 		opacity: 1 !important;
@@ -12,7 +12,7 @@
 	.sizeMedium-2Q3COE,
 	.sizeSmall-syGkV0,
 	.sizeLarge-D4HafV,
-	.small-23Atuv:not(.popout-3gby1q, .root-g14mjS) {
+	.small-23Atuv:not(%groupInvitePopout, %modalRoot) {
 		min-width: 400px;
 		max-width: 600px;
 		max-height: 88vh;
@@ -23,7 +23,7 @@
 		}
 	}
 	.modal-2RrUKJ,
-	.root-g14mjS:not(.popout-3gby1q) {
+	%modalRoot:not(%groupInvitePopout) {
 		background-color: var(--background);
 		border-radius: var(--border-radius);
 		box-shadow: var(--elevation-2);
@@ -32,8 +32,8 @@
 		transform: none !important;
 		min-height: unset;
 		animation: modal 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-		.header-2w6VV8,
-		.header-1zd7se {
+		%modalHeader,
+		%groupInvitePopoutHeader {
 			padding: var(--spacing-double);
 			border-bottom: 1px solid var(--base-border);
 			box-shadow: none;
@@ -53,7 +53,7 @@
 			}
 			.h4-1_f8j1,
 			.title-2dsDLn,
-			.colorStandard-21JIj7 {
+			%activityFeedColorStandard {
 				font-size: var(--font-size-md);
 				color: var(--text-normal);
 				font-weight: var(--font-weight-semibold);
@@ -69,7 +69,7 @@
 				font-size: 20px;
 				line-height: 24px;
 			}
-			.breadcrumbs-2uP7wU {
+			%breadcrumbs {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -79,7 +79,7 @@
 				background: var(--background);
 				z-index: 0;
 				box-sizing: border-box;
-				.breadcrumbWrapper-3rpYiO .breadcrumb-17S_pr {
+				%breadcrumbWrapper .breadcrumb-17S_pr {
 					white-space: nowrap;
 					font-size: var(--font-size);
 					font-weight: var(--font-weight-semibold);
@@ -108,7 +108,7 @@
 				&:hover {
 					color: var(--text-normal);
 				}
-				.contents-3ca1mk {
+				%forumTagClear {
 					width: 16px;
 					height: 16px;
 				}
@@ -129,7 +129,7 @@
 			border-radius: 0;
 			padding: var(--spacing-double);
 			padding-right: var(--spacing-double) !important;
-			.divider-3LgWDL {
+			%storeListingDivider {
 				display: none;
 			}
 			.body-_jWL8l {
@@ -158,13 +158,13 @@
 		.inner-ZyuQk0 {
 			padding: var(--spacing-double) var(--spacing-double) 0;
 		}
-		.colorStandard-21JIj7 {
+		%activityFeedColorStandard {
 			font-size: var(--font-size);
 		}
 		.largeSpacing-22TLsQ {
 			margin-bottom: var(--spacing-double);
 		}
-		.divider-3LgWDL {
+		%storeListingDivider {
 			border-top-color: var(--base-border);
 		}
 		.content-1G6Z6z {
@@ -197,12 +197,12 @@
 		.marginBottom20-315RVT {
 			margin-bottom: var(--spacing);
 		}
-		.switchItem-2hKKKK {
+		%switchItem {
 			margin: 0;
 			.switchIcon-3IwSZ_ {
 				display: none;
 			}
-			.directionRow-2Iu2A9 {
+			%flexDirectionRow {
 				align-items: center;
 				flex-direction: row-reverse;
 				label {
@@ -211,7 +211,7 @@
 					color: var(--text-normal);
 					cursor: var(--cursor);
 				}
-				.switch-3wwwcV {
+				%switch {
 					margin: 0;
 				}
 			}
@@ -224,7 +224,7 @@
 			background: var(--background-dark);
 			padding: var(--spacing-half) 0 var(--spacing-half) var(--spacing);
 			border-radius: var(--border-radius);
-			.directionRow-2Iu2A9 {
+			%flexDirectionRow {
 				align-items: center;
 				svg {
 					width: var(--font-size-xl);
@@ -250,7 +250,7 @@
 			content: none;
 		}
 	}
-	.footer-31IekZ {
+	%modalFooter {
 		background: var(--background);
 		box-shadow: none;
 		border-top: 1px solid var(--base-border);
@@ -262,10 +262,10 @@
 		button {
 			min-width: 120px;
 		}
-		&.justifyBetween-wAERV6 {
+		&%flexJustifyBetween {
 			justify-content: flex-start;
 		}
-		.lookLink-9FtZy-,
+		%buttonLink,
 		.cancelButton-27U_rB {
 			color: var(--text-normal);
 			background: var(--background-light);
@@ -274,7 +274,7 @@
 			cursor: var(--cursor);
 			&:hover {
 				border: 1px solid currentColor;
-				.contents-3ca1mk {
+				%forumTagClear {
 					background-image: none;
 					text-decoration: none;
 				}
@@ -320,9 +320,9 @@
 
 // Light Mode
 
-html.theme-light {
-	#app-mount .footer-31IekZ .lookLink-9FtZy-,
-	#app-mount .footer-31IekZ .cancelButton-27U_rB {
+html%themeLight {
+	#app-mount %modalFooter %buttonLink,
+	#app-mount %modalFooter .cancelButton-27U_rB {
 		&:hover {
 			background: var(--background);
 			border: 1px solid var(--secondary-border);

@@ -1,44 +1,44 @@
 @use '../assets';
 
-#app-mount .member-2gU6Ar {
+#app-mount %member {
 	padding: 0;
 	margin: 0;
 	max-width: 100%;
 	background: transparent;
-	&.offline-22aM7E {
+	&%memberOffline {
 		opacity: 0.5;
 	}
 
 	// Generic member entries
-	.layout-1qmrhw {
+	%memberLayout {
 		border-radius: 0;
 		height: var(--member-height);
 		padding: 0 calc(var(--spacing) + 5px);
 		cursor: var(--cursor);
 	}
-	.avatar-6qzftW {
+	%memberAvatar {
 		margin-right: var(--spacing-double);
 		width: var(--avatar-size-sm) !important;
 		height: var(--avatar-size-sm) !important;
 	}
-	.name-3Vmqxm {
+	%memberName {
 		font-size: var(--font-size);
 		font-weight: var(--font-weight-normal);
 		color: var(--text-normal);
 		line-height: normal;
 	}
-	.wrapper-1VLyxH {
+	%avatarWrapper {
 		width: var(--avatar-size-sm) !important;
 		height: var(--avatar-size-sm) !important;
 	}
-	.content-1U25dZ {
+	%memberContent {
 		overflow: visible;
 	}
-	.activity-2EQDZv {
+	%memberActivity {
 		font-size: var(--font-size-sm);
 		font-weight: var(--font-weight-semibold);
 		color: var(--text-muted);
-		.icon-Lupfh- {
+		%privateChannelActivityIcon {
 			margin-left: calc(var(--spacing) / 4);
 		}
 	}
@@ -71,9 +71,9 @@
 			background: var(--text-normal);
 		}
 	}
-	&.selected-1-Z6gm {
-		.activity-2EQDZv,
-		.roleColor-nA7BqX {
+	&%memberSelected {
+		%memberActivity,
+		%memberRoleColor {
 			color: #fff !important;
 		}
 	}
@@ -82,7 +82,7 @@
 	&.placeholder-1WgmVn {
 		padding: 0 var(--spacing);
 		animation: none;
-		.placeholderAvatar-1qAcRZ {
+		%memberPlaceholderAvatar {
 			border-radius: var(--border-radius);
 			border: 1px solid var(--base-border);
 			width: var(--avatar-size-sm);
@@ -90,13 +90,13 @@
 			background: var(--background-dark);
 		}
 	}
-	&.offline-22aM7E .wrapper-1VLyxH foreignObject::after {
+	&%memberOffline %avatarWrapper foreignObject::after {
 		content: none;
 	}
 }
-.mulitplePlaceholderUsername-2T3DCI,
-.placeholderUsername-3iQi_D,
-.memberGroupsPlaceholder-9tqX9V {
+%memberPlaceholderUsernameMultiple,
+%memberPlaceholderUsername,
+%memberGroupPlaceholder {
 	background: var(--text-muted);
 	opacity: 0.2;
 	height: 4px;

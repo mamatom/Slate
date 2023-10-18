@@ -1,5 +1,5 @@
 #app-mount {
-	.container-3wLKDe {
+	%forumContainer {
 		max-width: calc(100vw - (var(--sidebar-width, 0) * 2) - (var(--spacing-double) * 3) + 2px);
 	}
 
@@ -9,7 +9,7 @@
 			padding: 0;
 			border-right: 1px solid var(--base-border);
 		}
-		.headerRow-1MKoR- {
+		%forumHeaderRow {
 			border-bottom: 1px solid var(--base-border);
 		}
 		.header-1Uy0p6 {
@@ -25,7 +25,7 @@
 	.row-uezxzk:not(:last-child) {
 		border-bottom: 1px solid var(--base-border);
 	}
-	.mainCard-3KBsBI {
+	%forumCard {
 		border-radius: 0;
 		background: transparent;
 		border: none;

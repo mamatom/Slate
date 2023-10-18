@@ -1,7 +1,7 @@
-.app-2CXKsg:active + .container-2RRFHK {
+%shakeable:active + %loadingScreen {
 	display: none;
 }
-#app-mount .container-2RRFHK {
+#app-mount %loadingScreen {
 	background: var(--background-alt);
 	flex-direction: column;
 	justify-content: flex-start;
@@ -23,7 +23,7 @@
 			color: var(--text-normal);
 			margin-bottom: var(--spacing-double);
 		}
-		.keybindShortcut-3zF1P9 span {
+		%keybindShortcut span {
 			line-height: var(--line-height);
 			border-radius: var(--border-radius);
 			padding: var(--spacing-third) var(--spacing-half);
@@ -162,7 +162,7 @@
 
 // Light Mode
 
-html.theme-light #app-mount .container-2RRFHK .problems-CvGwpb a.statusLink-TySQmC {
+html%themeLight #app-mount %loadingScreen .problems-CvGwpb a.statusLink-TySQmC {
 	&:hover {
 		background: var(--background);
 		border: 1px solid var(--secondary-border);

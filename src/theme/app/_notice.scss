@@ -1,16 +1,16 @@
 #app-mount {
-	.base-2jDfDU .notice-2FJMB4 {
+	%base %notice {
 		width: calc(100% - var(--sidebar-width));
 		margin-left: var(--sidebar-width);
 		height: 36px;
 		& + .content-1SgpWY {
-			.privateChannels-oVe7HL {
-				.searchBar-3TnChZ,
-				.scroller-WSmht3 {
+			%privateChannels {
+				%privateChannelsSearchBar,
+				%privateChannelsScroller {
 					margin-top: -36px;
 				}
 			}
-			.header-2o-2hj,
+			%channelsHeader,
 			.scroller-2wx7Hm {
 				margin-top: -36px;
 			}

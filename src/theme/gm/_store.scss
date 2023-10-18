@@ -6,7 +6,7 @@
 	}
 	.gm-store-category {
 		margin-top: var(--spacing-double);
-		.scrollerBase-_bVAAt {
+		%scroller {
 			display: flex;
 			&::-webkit-scrollbar {
 				display: block !important;
@@ -82,7 +82,7 @@
 			font-size: var(--font-size) !important;
 		}
 
-		button.colorGrey-2DXtkV .contents-3ca1mk svg {
+		button%buttonColorGrey %forumTagClear svg {
 			width: 16px;
 			height: 16px;
 		}

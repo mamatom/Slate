@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .root-8LYsGj {
+#app-mount %userModal {
 	--left-side: 233px;
 	--right-side: 465px;
 	--banner-height: 180px;
@@ -23,7 +23,7 @@
 	}
 
 	// Left side
-	.topSection-13QKHs {
+	%userModalTopSection {
 		width: var(--left-side);
 		border-right: 1px solid var(--base-border);
 		height: 100%;
@@ -36,7 +36,7 @@
 			flex-direction: column;
 		}
 		// Avatar
-		.wrapper-1VLyxH {
+		%avatarWrapper {
 			position: relative;
 			top: 0;
 			left: 0;
@@ -105,7 +105,7 @@
 	}
 
 	// Badges
-	.badgeList-2aoHPw {
+	%userModalBadgeList {
 		margin: var(--spacing-double) 0;
 		padding: 0;
 		flex-direction: column;
@@ -237,7 +237,7 @@
 	}
 
 	// Username
-	.nameTag-2Nlmsy {
+	%userModalNameTag {
 		position: absolute;
 		margin: 0;
 		top: calc(183px + var(--spacing-double));
@@ -251,7 +251,7 @@
 			top: calc(233px + var(--spacing-double));
 		}
 	}
-	.discriminator-1bqsd3 {
+	%userModalDiscriminator {
 		font-size: var(--font-size);
 		color: var(--text-muted);
 	}
@@ -269,7 +269,7 @@
 	}
 
 	// Tabs
-	.tabBarContainer-sCZC4w {
+	%userModalTabBarContainer {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -278,10 +278,10 @@
 		border-bottom: 1px solid var(--base-border);
 		padding: 0;
 	}
-	.tabBar-2hXqzU {
+	%userModalTabBar {
 		height: auto;
 	}
-	.item-3XjbnG {
+	%topPillItem {
 		margin: 0;
 		padding: 0;
 		text-align: center;
@@ -324,7 +324,7 @@
 				border-radius: var(--border-radius) var(--border-radius) 0 0;
 			}
 		}
-		&.selected-g-kMVV,
+		&%topPillItemSelected,
 		&[style*='rgb(255, 255, 255)'] {
 			box-shadow: inset 0 -3px 0px var(--accent-solid);
 			background: transparent !important;
@@ -333,7 +333,7 @@
 	}
 
 	// Body
-	.body-1Ukv50 {
+	%userModalBody {
 		width: var(--right-side);
 		border-top-color: var(--base-border);
 		position: absolute;
@@ -359,19 +359,19 @@
 		color: var(--text-normal) !important;
 		box-shadow: inset 0 -3px 0px var(--accent-solid);
 	}
-	.note-3M15gE {
+	%userModalNote {
 		margin: 0;
 	}
 
-	.userInfoSection-2u2hir {
+	%userModalInfoSection {
 		border: none;
 		padding: var(--spacing-double);
 		background: var(--background);
-		& + .userInfoSection-2u2hir {
+		& + %userModalInfoSection {
 			padding-top: 0;
 		}
 	}
-	.userInfoSectionHeader-2mYYun {
+	%userModalInfoSectionHeader {
 		color: var(--text-normal);
 		font-size: var(--font-size-md);
 		font-weight: var(--font-weight-semibold);
@@ -383,7 +383,7 @@
 		padding: var(--spacing-double);
 	}
 
-	.connectedAccounts-fvr7-7 {
+	%userModalConnectedAccounts {
 		margin: 0;
 		gap: var(--spacing);
 	}
@@ -391,7 +391,7 @@
 		margin: 0;
 		width: 48.5%;
 	}
-	.connectedAccountContainer-SlCC-S {
+	%userModalConnectedAccountContainer {
 		margin: 0;
 		width: 100%;
 		padding: 0;
@@ -399,7 +399,7 @@
 			margin-bottom: var(--spacing);
 		}
 	}
-	.connectedAccount-2PrNaX {
+	%userModalConnectedAccount {
 		width: unset;
 		margin: 0;
 		background: var(--background-light);
@@ -412,7 +412,7 @@
 		flex-wrap: wrap;
 		height: auto;
 		break-inside: avoid;
-		.connectedAccountName-j0meX4 {
+		%userModalConnectedAccountName {
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
 			line-height: normal;
@@ -499,7 +499,7 @@
 	}
 
 	// Activity
-	.headerText-3g1XK9 {
+	%activityHeaderText {
 		color: var(--text-normal);
 		font-size: var(--font-size-md);
 		font-weight: var(--font-weight-semibold);
@@ -507,9 +507,9 @@
 		text-transform: none;
 		margin-bottom: var(--spacing-half);
 	}
-	.userProfileActivity-sal5no {
+	%userModalActivity {
 		padding: var(--spacing-double);
-		& + .userProfileActivity-sal5no {
+		& + %userModalActivity {
 			padding-top: 0;
 		}
 	}
@@ -560,12 +560,12 @@
 	}
 	.button-TGAkj4.iconButtonSize-1-pz2t {
 		max-width: unset;
-		.contents-3ca1mk {
+		%forumTagClear {
 			display: flex;
 		}
 	}
 
-	.listScroller-entkMk,
+	%userModalListScroller,
 	.infoScroller-1QMpon {
 		padding: var(--banner-height) 0 0 !important;
 		& > div {
@@ -590,7 +590,7 @@
 			z-index: 0;
 		}
 	}
-	.listRow-2nO1T6 {
+	%userModalListRow {
 		margin: 0;
 		border-radius: 0;
 		background: var(--background);
@@ -603,22 +603,22 @@
 			background: var(--background-modifier-active);
 		}
 	}
-	.listAvatar-2bU5Uh {
+	%userModalListAvatar {
 		width: 24px;
 		height: 24px;
 		border-radius: var(--border-radius);
 		border: 1px solid var(--base-border);
 		margin-right: var(--spacing);
 	}
-	.listRowContent-PEmSWj {
+	%userModalListRowConent {
 		display: flex;
 		align-items: center;
 	}
-	.listName-PwbeHL {
+	%userModalListName {
 		font-size: var(--font-size);
 		font-weight: var(--font-weight-normal);
 	}
-	.guildNick-fe8oPN {
+	%userModalListGuildNick {
 		font-weight: var(--font-weight-normal);
 		margin-left: var(--spacing);
 	}

@@ -57,13 +57,13 @@
 					color: var(--text-normal);
 					font-weight: var(--font-weight-semibold);
 				}
-				.nameTag-H6kSJ0 {
+				%userPopoutNameTag {
 					line-height: normal;
-					.username-tJjT82 {
+					%friendsColumnNameUsername-tJjT82 {
 						font-weight: var(--font-weight-semibold);
 						color: var(--text-normal);
 					}
-					.discriminator-1DCM-o {
+					%friendsColumnNameDiscriminator-1DCM-o {
 						font-size: var(--font-size);
 						color: var(--text-muted);
 						font-weight: var(--font-weight-normal);
@@ -71,7 +71,7 @@
 					&.tagFaded-1S1bJ- {
 						opacity: 1;
 						padding-left: var(--spacing-half);
-						.username-tJjT82 {
+						%friendsColumnNameUsername-tJjT82 {
 							color: var(--text-muted);
 							font-weight: var(--font-weight-normal);
 						}
@@ -92,7 +92,7 @@
 				margin: var(--spacing);
 				color: var(--text-normal);
 			}
-			.colorStandard-21JIj7 {
+			%activityFeedColorStandard {
 				color: inherit;
 			}
 			.reactionSelected-1aMb2K {

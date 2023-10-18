@@ -19,7 +19,7 @@ h6,
 p {
 	user-select: text;
 }
-.h5-18_1nd {
+%activityFeedH5 {
 	color: var(--text-normal);
 	text-transform: none;
 	font-weight: var(--font-weight-normal);
@@ -34,7 +34,7 @@ p {
 .colorStatusRed-3FRrPF {
 	color: rgb(var(--status-red));
 }
-.colorStandard-21JIj7 {
+%activityFeedColorStandard {
 	color: var(--text-normal);
 }
 strong {

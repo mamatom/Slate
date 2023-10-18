@@ -1,28 +1,28 @@
 @use '../assets';
 
-#app-mount .sidebar-1tnWFu {
-	.wrapper-NhbLHG {
+#app-mount %channelsSidebar {
+	%channelWrapper {
 		position: relative;
 		cursor: var(--cursor);
 		padding: 0;
 
 		// Unread channel
-		&.modeUnread-3Cxepe {
-			.content-1gYQeQ {
-				.name-28HaxV,
+		&%channelWrapperUnread {
+			%channelContent {
+				%channelName,
 				svg {
 					color: var(--text-focus);
 					opacity: 1;
 				}
 			}
-			&:hover .unread-36eUEm {
+			&:hover %channelUnreadPill {
 				height: 18px;
 			}
 		}
 
 		// Muted channel
-		&.modeMuted-2T4MDZ .content-1gYQeQ {
-			.name-28HaxV,
+		&%channelWrapperMuted %channelContent {
+			%channelName,
 			svg {
 				opacity: 0.75;
 				color: var(--text-muted);
@@ -30,9 +30,9 @@
 		}
 
 		// Selected channel
-		&.modeSelected-3DmyhH .content-1gYQeQ {
+		&%channelWrapperSelected %channelContent {
 			background: var(--accent-solid);
-			.name-28HaxV,
+			%channelName,
 			svg {
 				opacity: 1;
 				color: var(--white);
@@ -44,12 +44,12 @@
 	}
 
 	// User drag
-	.draggable-S2aEx4 {
+	%voiceUserDraggable {
 		height: var(--item-height);
 	}
 
 	// User drag region
-	.containerUserOver-SDa1HW::after {
+	%channelContainerUserOver::after {
 		left: 0;
 		border-radius: var(--border-radius);
 		border: 2px solid rgb(var(--status-green));
@@ -57,7 +57,7 @@
 	}
 
 	// Unread pill
-	.unread-36eUEm {
+	%channelUnreadPill {
 		border-radius: 0;
 		width: 2px;
 		height: 12px;
@@ -69,14 +69,14 @@
 	}
 
 	// Channel
-	.mainContent-20q_Hp,
-	.voiceUser-14U_Ns {
+	%channelMain,
+	%voiceUser {
 		cursor: var(--cursor);
 	}
 	.iconContainer-21RCa3 {
 		margin-right: 0;
 	}
-	.content-1gYQeQ {
+	%channelContent {
 		margin: 0;
 		padding: 0 var(--spacing);
 		border-radius: 0;
@@ -107,7 +107,7 @@
 				transform-origin: center;
 			}
 		}
-		.icon-2W8DHg {
+		%channelIcon {
 			margin-right: var(--spacing);
 			height: 14px;
 			width: auto;
@@ -116,7 +116,7 @@
 				transform: scale(1.25) translateX(2px) translateY(1px);
 			}
 		}
-		.name-28HaxV {
+		%channelName {
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
 			color: var(--text-normal);
@@ -124,10 +124,10 @@
 	}
 
 	// Channel Dragging
-	.containerDragAfter-3TEhpe::before,
-	.containerDragBefore-3Dzc5x::before,
-	.containerDragAfter-1F4fgZ::after,
-	.containerDragBefore-31UGCO::before {
+	%categoryContainerDragAfter::before,
+	%categoryContainerDragBefore::before,
+	%channelContainerDragAfter::after,
+	%channelContainerDragBefore::before {
 		left: 0;
 		border-radius: 0;
 		height: 2px;
@@ -145,7 +145,7 @@
 			padding-left: calc(var(--spacing) * 2.5);
 			cursor: var(--cursor);
 		}
-		.voiceUser-3nRK-K {
+		%voiceUser {
 			border-radius: 0;
 			height: var(--item-height);
 			.userAvatar-3Hwf1F {
@@ -154,30 +154,30 @@
 				height: var(--avatar-size-sm);
 				width: var(--avatar-size-sm);
 				border: 1px solid var(--base-border);
-				&.avatarSpeaking-2pCGrZ {
+				&%voiceUserAvatarSpeaking {
 					border-color: rgb(var(--accent));
 					box-shadow: inset 0 0 0 2px var(--background-alt), 0 0 0 2px rgb(var(--accent), 0.35);
 				}
 			}
-			.icons-3q-_6z {
+			%voiceUserIcons {
 				margin-right: var(--spacing);
 			}
-			.username-vAneIW {
+			%voiceUserName {
 				color: var(--text-normal);
 				font-size: var(--font-size);
 				font-weight: var(--font-weight-normal);
 			}
-			.icon-3BcwQu {
+			%voiceUserIcon {
 				color: var(--text-normal);
 				height: 14px;
 				width: 14px;
 			}
 			&.selected-1oxcpH {
 				.icon-N9JZb6,
-				.username-vAneIW {
+				%voiceUserName {
 					color: #fff !important;
 				}
-				.avatarSpeaking-2pCGrZ {
+				%voiceUserAvatarSpeaking {
 					box-shadow: inset 0 0 0 2px rgb(var(--accent)), 0 0 0 2px rgb(255, 255, 255, 0.5);
 					border-color: #fff;
 				}
@@ -185,15 +185,15 @@
 		}
 		&.collapsed-3x0tkj {
 			padding-left: calc(var(--spacing) * 2.5);
-			.content-3xS9Lh {
+			%voiceUserContent {
 				padding-left: 0;
 			}
 		}
 	}
 
 	// User Limit
-	.userLimit-VbEkeM {
-		.wrapper-2fEmwW {
+	%channelUserLimit {
+		%channelUserLimitWrapper {
 			color: var(--text-normal);
 			border-radius: var(--border-radius);
 			border: 1px solid var(--base-border);
@@ -203,10 +203,10 @@
 				font-size: var(--font-size);
 				color: var(--text-normal);
 				font-weight: var(--font-weight-semibold);
-				&.users-2JoyGL {
+				&%channelUserLimitUsers {
 					background: transparent;
 				}
-				&.total-1c5KCN {
+				&%channelUserLimitTotal {
 					background: var(--background-alt);
 					&::after {
 						content: none;

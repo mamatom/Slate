@@ -20,14 +20,14 @@
 		}
 		.content-3Y1V2C {
 			margin-left: var(--spacing);
-			.base-21yXnu {
+			%headerBarTitle {
 				font-size: var(--font-size-md);
 				font-weight: var(--font-weight-semibold);
 				color: var(--text-normal);
 			}
 			.buttonContainer-38oHuK {
 				margin-top: var(--spacing);
-				.lookFilled-1Gx00P {
+				%buttonFilled {
 					margin: 0;
 				}
 			}

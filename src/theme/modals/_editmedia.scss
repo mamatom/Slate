@@ -1,4 +1,4 @@
-#app-mount .root-g14mjS .modalContent-3_WBnz {
+#app-mount %modalRoot .modalContent-3_WBnz {
 	padding: 0 !important;
 	.editingContainer-3s5xK0 {
 		background: #000;
@@ -17,7 +17,7 @@
 		.icon-2glot6 {
 			display: none;
 		}
-		.slider-1NC-Gf {
+		%slider {
 			top: 0;
 		}
 	}

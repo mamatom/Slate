@@ -1,5 +1,5 @@
-.layer-2aCOJ3[style*='position: absolute;'][style*='bottom: 90'][style*='left']
-	.animatorTop-3ltI52 {
+%popoutLayer[style*='position: absolute;'][style*='bottom: 90'][style*='left']
+	%popoutAnimatorTop {
 	position: fixed !important;
 	top: 0 !important;
 	left: 0 !important;
@@ -21,7 +21,7 @@
 	}
 }
 
-#app-mount .container-1ILvLB {
+#app-mount %connectionInfo {
 	background: var(--background);
 	position: fixed;
 	box-shadow: none;
@@ -60,7 +60,7 @@
 	strong {
 		color: var(--text-focus);
 	}
-	.popoutBottom-15-vLu {
+	%connectionInfoBottom {
 		margin: 0;
 	}
 }

@@ -1,10 +1,10 @@
 @use '../assets';
 
-#app-mount .wrapper-3ByaVZ .root-g14mjS {
+#app-mount .wrapper-3ByaVZ %modalRoot {
 	max-width: 600px;
 	min-width: 400px;
 	width: 500px;
-	.header-1zd7se {
+	%groupInvitePopoutHeader {
 		position: relative;
 		overflow: visible;
 		.marginBottom8-emkd0_ {
@@ -17,7 +17,7 @@
 			top: unset;
 		}
 	}
-	.container-1SX9VC {
+	%stickerSearchContainer {
 		margin: 0;
 		padding: var(--spacing-double);
 		background: var(--background);
@@ -26,7 +26,7 @@
 		top: 50px;
 		left: 0;
 		width: 100%;
-		.inner-1NoIT5 {
+		%groupInvitePopoutSearchBarInner {
 			overflow: visible !important;
 		}
 		.iconLayout-SqV3nb {
@@ -53,7 +53,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		.title-2CL_z0 {
+		%noChannelTitle {
 			color: var(--text-normal);
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
@@ -94,7 +94,7 @@
 				background: var(--background-modifier-active);
 			}
 			.inviteRowButton-3hcOhY,
-			.lookLink-9FtZy- {
+			%buttonLink {
 				color: var(--text-normal);
 				background: var(--background-light);
 				border: 1px solid var(--base-border);
@@ -106,7 +106,7 @@
 				margin: 0;
 				&:hover {
 					border: 1px solid currentColor;
-					.contents-18-Yxp {
+					%buttonContents {
 						text-decoration: none;
 					}
 				}
@@ -114,7 +114,7 @@
 					box-shadow: 0 0 0 1px currentColor !important;
 					border: 1px solid currentColor !important;
 				}
-				&.lookLink-9FtZy- {
+				&%buttonLink {
 					pointer-events: none;
 				}
 			}
@@ -145,16 +145,16 @@
 		.marginTop20-2T8ZJx:first-child {
 			margin: 0;
 		}
-		.switch-3wwwcV {
+		%switch {
 			margin-right: var(--spacing-half);
 		}
 	}
-	.footer-31IekZ {
-		.title-3hptVQ,
+	%modalFooter {
+		%groupInvitePopoutTitle,
 		.content-3nJg0c::before {
 			display: none;
 		}
-		div.input-2g-os5 {
+		div%input {
 			background: transparent;
 			border: none;
 			padding: 0;
@@ -168,14 +168,14 @@
 }
 
 // Light Mode
-html.theme-light {
+html%themeLight {
 	#app-mount
 		.wrapper-3ByaVZ
-		.root-g14mjS
+		%modalRoot
 		.scroller-3nFW5p
 		.inviteRow-3vmB7i
 		.inviteRowButton-3hcOhY,
-	#app-mount .wrapper-3ByaVZ .root-g14mjS .scroller-3nFW5p .inviteRow-3vmB7i .lookLink-9FtZy- {
+	#app-mount .wrapper-3ByaVZ %modalRoot .scroller-3nFW5p .inviteRow-3vmB7i %buttonLink {
 		&:hover {
 			background: var(--background);
 			border: 1px solid var(--secondary-border);

@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
+#app-mount %layer:not(.baseLayer-W6S8cY) {
 	.contentColumnMinimal-32PuDO {
 		max-width: unset;
 		min-width: 100%;
@@ -21,7 +21,7 @@
 		max-width: unset;
 		width: calc(100% - 205px);
 		padding: 0 var(--spacing-double) var(--spacing-double);
-		.container-20TyK0 {
+		%settingsNoticeContainer {
 			box-sizing: border-box;
 			border-radius: var(--border-radius);
 			box-shadow: var(--elevation-1);
@@ -37,12 +37,12 @@
 	}
 
 	// Overview
-	.children-1xdcWE {
+	%paymentinfo {
 		.marginBottom40-fvAlAV.flex-2S1XBF[style]
 			+ .divider-3wNib3
 			+ .divider-3wNib3:nth-child(3)
 			.select-1YfRS9
-			+ .colorStandard-21JIj7
+			+ %activityFeedColorStandard
 			+ .marginTop20-2T8ZJx
 			+ .marginTop20-2T8ZJx {
 			margin: 0;
@@ -50,7 +50,7 @@
 		.flex-2S1XBF[style*='flex: 1 1 50%'],
 		.flexChild-3PzYmX[style*='flex: 1 1 50%'] {
 			margin-top: var(--spacing-double);
-			.lookOutlined-3sRXeN {
+			%buttonOutlined {
 				margin-top: 0;
 			}
 			button .file-input {
@@ -60,7 +60,7 @@
 	}
 
 	// Roles
-	.container-3EtAkD {
+	%guildSettingsRoleDefaultPermissions {
 		border-radius: var(--border-radius);
 		border: 1px solid var(--base-border);
 		padding: var(--spacing);
@@ -77,7 +77,7 @@
 		}
 	}
 
-	.roleRow-3LoHQ6 {
+	%roleRow {
 		margin: 0;
 		border-right: 1px solid var(--base-border);
 		border-left: 1px solid var(--base-border);
@@ -129,17 +129,17 @@
 		border-right: none;
 		min-height: var(--settings-min-height);
 		max-height: var(--settings-max-height);
-		.side-2ur1Qk {
+		%settingsSide {
 			max-height: inherit;
 			min-height: inherit;
-			.item-3XjbnG {
+			%topPillItem {
 				margin: 0;
 				border-radius: 0;
 				cursor: var(--cursor);
 				.colorInteractiveActive-30E9n8 {
 					color: var(--text-normal);
 				}
-				&.selected-g-kMVV {
+				&%topPillItemSelected {
 					background-color: var(--background-modifier-selected) !important;
 					.colorInteractiveActive-30E9n8 {
 						color: var(--white);
@@ -148,7 +148,7 @@
 			}
 		}
 	}
-	.titleContainer-3fPic2 {
+	%guildSettingsRoleBackContainer {
 		margin: 0;
 		padding: var(--spacing);
 		background: var(--background-alt);
@@ -181,7 +181,7 @@
 			padding: var(--spacing-double);
 		}
 	}
-	.header-JUTO-g.stickyHeader-1Sunlx {
+	%guildSettingsRoleHeader.stickyHeader-1Sunlx {
 		padding: var(--spacing-double);
 		border-bottom: 1px solid var(--base-border);
 		box-sizing: border-box;
@@ -207,7 +207,7 @@
 			width: 16px;
 			height: 16px;
 		}
-		.tabBar-3DfKkN {
+		%headerBarTabBar {
 			border: none;
 			margin: 0;
 		}
@@ -261,21 +261,21 @@
 	// Emojis
 	.wrapper-5BaSTh {
 		margin-top: calc(var(--spacing) * 8);
-		.image-20MDYu {
+		%noChannelImage {
 			width: 156px !important;
 			height: 156px !important;
 			margin-bottom: var(--spacing-double);
 			background: var(--text-muted) !important;
 			mask: url(assets.$illustration_7) center/contain no-repeat;
 		}
-		.title-2CL_z0 {
+		%noChannelTitle {
 			color: var(--text-normal);
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
 			text-transform: none;
 			line-height: normal;
 		}
-		.text-27cdrj {
+		%noChannelText {
 			margin-top: var(--spacing-half);
 			color: var(--text-muted);
 			font-size: var(--font-size);
@@ -284,14 +284,14 @@
 			line-height: normal;
 		}
 	}
-	div.contentRegion-3HkfJJ
+	div%settingsContentRegion
 		> div
 		> div
 		> main
 		> div
 		> div:nth-child(3)
 		> div:nth-child(2)
-		> div.flex-2S1XBF.flex-3BkGQD.horizontal-1ae9ci.horizontal-2EEEnY.flex-3BkGQD.directionRow-2Iu2A9.justifyStart-2Mwniq.alignStretch-Uwowzr.noWrap-hBpHBz.marginBottom4-1fdMNe {
+		> div.flex-2S1XBF%flex.horizontal-1ae9ci.horizontal-2EEEnY%flex%flexDirectionRow%flexJustifyStart%flexAlignStretch%flexNoWrap.marginBottom4-1fdMNe {
 		margin: 0;
 		padding: var(--spacing);
 		background: var(--background-alt);
@@ -299,20 +299,20 @@
 		border-radius: var(--border-radius) var(--border-radius) 0 0;
 		.flexChild-3PzYmX {
 			margin: 0;
-			.colorStandard-21JIj7 {
+			%activityFeedColorStandard {
 				color: var(--text-normal);
 				font-weight: var(--font-weight-normal);
 				font-size: var(--font-size);
 			}
 		}
 	}
-	div.contentRegion-3HkfJJ
+	div%settingsContentRegion
 		> div
 		> div
 		> main
 		> div
 		> div:nth-child(3)
-		> div.colorStandard-21JIj7.size14-3fJ-ot.description-3_Ncsb.formText-2ngGjI.marginBottom40-fvAlAV.modeDefault-2fEh7a {
+		> div%activityFeedColorStandard.size14-3fJ-ot.description-3_Ncsb.formText-2ngGjI.marginBottom40-fvAlAV.modeDefault-2fEh7a {
 		margin: 0;
 	}
 	.emojiRow-zIc7ZX {

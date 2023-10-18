@@ -1,13 +1,13 @@
 @use '../assets';
 
-#app-mount .chat-2ZfjoI {
-	.wrapper-3HVHpV {
+#app-mount %chat {
+	%chatLoadingWrapper {
 		background: var(--background-alt);
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 	}
-	.wrapper-15CKyy {
+	%chatLoadingWrapper {
 		background: transparent;
 		padding-top: var(--spacing);
 		padding-bottom: var(--spacing);

@@ -1,5 +1,5 @@
 #app-mount {
-	.popout-2iWAc-.force-theme.content-i-YmzK {
+	%popout.force-theme.content-i-YmzK {
 		padding: var(--spacing);
 		border: 1px solid var(--base-border);
 		&.leftArrow-2gmK1H::before {
@@ -14,7 +14,7 @@
 			clip-path: polygon(0 100%, 100% 100%, 100% 0);
 			box-shadow: var(--elevation-1);
 		}
-		.container-36u7Lw {
+		%libraryContainer {
 			display: none;
 		}
 		.channelsTitle-26pflO {
@@ -73,13 +73,13 @@
 
 // Light Mode
 
-html.theme-light {
+html%themeLight {
 	#app-mount
-		.popout-2iWAc-.force-theme.content-i-YmzK
+		%popout.force-theme.content-i-YmzK
 		.buttonContainer-2LQN58
 		.buttonSkipCenterAlign-3S-UYG,
 	#app-mount
-		.popout-2iWAc-.force-theme.content-i-YmzK
+		%popout.force-theme.content-i-YmzK
 		.buttonContainer-2LQN58
 		.buttonSkipLeftAlign-2icbri {
 		&:hover {

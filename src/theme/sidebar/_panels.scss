@@ -24,7 +24,7 @@
 		transition: none;
 		cursor: var(--cursor);
 		align-items: center;
-		.contents-3ca1mk {
+		%forumTagClear {
 			display: flex;
 			align-items: center;
 		}
@@ -60,19 +60,19 @@
 	}
 
 	// Activity
-	.activityPanel-9icbyU {
+	%activityPanel {
 		border: none;
 	}
 
 	// Connected
-	.container-1zzFcN {
+	%connectionPanel {
 		position: relative;
 		border: none;
 	}
-	.subtext-2HDqJ7 {
+	%accountPanelDiscriminator {
 		color: var(--text-focus);
 	}
-	.channel-3prF2u {
+	%connectionPanelChannel {
 		font-size: var(--font-size-sm);
 	}
 
@@ -80,9 +80,9 @@
 	.connection-3k9QeF {
 		padding: 0;
 	}
-	.container-1zzFcN {
+	%connectionPanel {
 		padding: var(--spacing);
-		.inner-llGtyq {
+		%connectionPanelInner {
 			flex: 0;
 			min-width: 18px;
 			position: absolute;
@@ -90,11 +90,11 @@
 			left: 0;
 			width: 100%;
 			height: 1px;
-			.rtcConnectionStatus-c5A6Av {
+			%rtcConnectionStatus {
 				height: 1px;
 				width: 100%;
 				padding: 0;
-				&.rtcConnectionQualityFine-3zZrSa {
+				&%rtcConnectionQualityFine {
 					background: hsl(var(--discord-green));
 				}
 			}
@@ -164,7 +164,7 @@
 			}
 		}
 	}
-	.rtcConnectionStatus-c5A6Av .statusWithPopout-1MDqs1 {
+	%rtcConnectionStatus .statusWithPopout-1MDqs1 {
 		position: absolute;
 		font-size: 0;
 		top: calc(var(--spacing) + 1px);
@@ -175,7 +175,7 @@
 		height: 24px;
 		z-index: 2;
 		border-radius: var(--border-radius) 0 0 var(--border-radius);
-		.contents-3ca1mk {
+		%forumTagClear {
 			font-size: 0;
 			mask: url(assets.$icon_pulse) center/cover no-repeat;
 			background: var(--text-normal);
@@ -183,14 +183,14 @@
 			height: 16px;
 		}
 		&:hover {
-			.contents-3ca1mk {
+			%forumTagClear {
 				background: var(--white);
 			}
 		}
 	}
 
 	// Share buttons
-	.actionButtons-2vEOUh {
+	%panelActionButtons {
 		position: absolute;
 		top: calc(var(--spacing) - 4px);
 		left: calc(var(--spacing) + var(--panel-btn-width));
@@ -231,7 +231,7 @@
 			z-index: 10;
 			&:hover,
 			&[aria-expanded='true'] {
-				.wrapper-1VLyxH {
+				%avatarWrapper {
 					box-shadow: 0 0 0 1px var(--accent-solid);
 					transition: 100ms ease;
 					rect:not([fill='transparent']) {
@@ -240,7 +240,7 @@
 					}
 				}
 			}
-			.wrapper-3Un6-K {
+			%avatarWrapper {
 				width: var(--avatar-size-sm) !important;
 				height: var(--avatar-size-sm) !important;
 				opacity: 1;
@@ -278,7 +278,7 @@
 	.avatarSpeaking-36V2PN {
 		border-radius: var(--border-radius);
 	}
-	.title-338goq {
+	%accountPanelUsername {
 		font-size: var(--font-size);
 	}
 	.powercord-spotify.hover .spotify-extra-controls {

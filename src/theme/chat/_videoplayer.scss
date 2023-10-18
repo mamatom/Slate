@@ -1,7 +1,7 @@
 @use '../assets';
 
 #app-mount {
-	.wrapper-1FP9YQ {
+	%player {
 		background: var(--background);
 		border-radius: var(--border-radius);
 		&::after {
@@ -16,28 +16,28 @@
 			opacity: 0;
 			transition: 250ms linear opacity;
 		}
-		&.wrapperPaused-9B8znP::after {
+		&%playerPaused::after {
 			opacity: 1;
 		}
-		&.wrapperControlsHidden-2BK8R2 {
-			.metadata-3IncIG,
-			.videoControls-2NzHnF {
+		&%playerControlsHidden {
+			%playerMetadata,
+			%playerVideoControls {
 				opacity: 0;
 			}
 		}
-		&:hover .playCenter-Fe8u3X .wrapper-x4po40 .icon-23NjRH {
+		&:hover .playCenter-Fe8u3X %embedVideoActionsButtonWrapper %mediaCarouselPaginationIcon {
 			opacity: 1;
 		}
 	}
 	.playCenter-Fe8u3X {
-		.iconWrapper-1lfhOx {
+		%mediaCarouselPaginationIconWrapper {
 			opacity: 1;
 		}
-		.wrapper-x4po40 {
+		%embedVideoActionsButtonWrapper {
 			background: transparent;
 			padding: 0;
 			opacity: 1;
-			.icon-23NjRH {
+			%mediaCarouselPaginationIcon {
 				margin: 0;
 				cursor: var(--cursor);
 				width: 72px;
@@ -52,7 +52,7 @@
 			}
 		}
 	}
-	.videoControls-2NzHnF {
+	%playerVideoControls {
 		display: grid;
 		grid-template-columns: auto auto 1fr auto auto;
 		z-index: 1;
@@ -79,44 +79,44 @@
 			left: var(--spacing);
 			width: calc(100% - var(--spacing-double));
 			display: block;
-			.mediaBarInteraction-tUE5dq,
-			.mediaBarInteractionDragging-3XLL8k {
+			%playerMediaBarInteraction,
+			%playerMediaBarInteractionDragging {
 				margin: 0;
 				display: flex;
 				align-items: center;
 				&:hover,
 				&:active {
-					.buffer-3eVqKK,
-					.mediaBarPreview-1gUbVy,
-					.mediaBarProgress-38I317 {
+					%playerMediaBarBuffer,
+					%playerMediaBarPreview,
+					%playerMediaBarProgress {
 						height: 5px !important;
 					}
 				}
-				.mediaBarWrapper-33h1oY {
+				%playerMediaBarWrapper {
 					background: transparent;
 					height: 10px;
 					border-radius: 0;
 					box-shadow: none;
-					.mediaBarProgress-38I317 {
+					%playerMediaBarProgress {
 						background: var(--accent-solid);
 					}
-					.buffer-3eVqKK,
-					.mediaBarPreview-1gUbVy,
-					.mediaBarProgress-38I317 {
+					%playerMediaBarBuffer,
+					%playerMediaBarPreview,
+					%playerMediaBarProgress {
 						height: 3px;
 						top: 50%;
 						transition: 150ms ease height;
 						transform: translateY(-50%);
 					}
-					.buffer-3eVqKK,
-					.buffer-3eVqKK::after,
-					.buffer-3eVqKK::before {
+					%playerMediaBarBuffer,
+					%playerMediaBarBuffer::after,
+					%playerMediaBarBuffer::before {
 						background: var(--white);
 						opacity: 0.3;
 					}
 				}
 			}
-			.mediaBarGrabber-FvJKJg {
+			%playerMediaBarGrabber {
 				background: var(--accent-solid);
 				transition: none;
 			}
@@ -125,11 +125,11 @@
 				content: none;
 			}
 		}
-		.flex-3BkGQD {
+		%flex {
 			justify-content: space-between;
 		}
 		> div:last-child {
-			.controlIcon-1grhw_ {
+			%playerControlIcon {
 				margin: 0;
 			}
 		}
@@ -137,7 +137,7 @@
 	.volumeButton-2XwKVs {
 		margin-left: var(--spacing);
 	}
-	.controlIcon-1grhw_ {
+	%playerControlIcon {
 		margin: 0;
 		height: 20px;
 		width: 20px;
@@ -153,22 +153,22 @@
 			opacity: 1;
 		}
 	}
-	.durationTimeWrapper-LdSEv8 {
+	%playerDurationTimeWrapper {
 		margin: 0;
-		.durationTimeDisplay-QwCeRr,
-		.durationTimeSeparator-1Cqi9N {
+		%playerDurationTimeDisplay,
+		%playerDurationTimeSeparator {
 			font-weight: var(--font-weight);
 			font-size: var(--font-size-sm);
 			color: var(--white);
 			font-family: var(--font-family-sans-serif);
 			margin: 0;
 			user-select: text;
-			&.durationTimeSeparator-1Cqi9N {
+			&%playerDurationTimeSeparator {
 				margin: 0 var(--spacing-third);
 			}
 		}
 	}
-	.metadata-3IncIG {
+	%playerMetadata {
 		padding: var(--spacing);
 		top: 0;
 		z-index: 10;
@@ -176,19 +176,19 @@
 		transform: none !important;
 		transition: 150ms ease opacity;
 		background: linear-gradient(0deg, transparent, rgb(0, 0, 0, 0.75));
-		.metadataName-1KMZtB {
+		%playerMetadataName {
 			color: var(--white);
 			font-weight: var(--font-weight-normal);
 			font-size: var(--font-size);
 			line-height: normal;
 		}
-		.metadataSize-2A2s1T {
+		%playerMetadataSize {
 			font-size: var(--font-size-sm);
 			font-weight: var(--font-weight-normal);
 			color: var(--white);
 			opacity: 0.65;
 		}
-		.metadataDownload-3IY84h {
+		%playerMetadataDownload {
 			padding: 0;
 			opacity: 1;
 			border: none;
@@ -197,7 +197,7 @@
 			width: 18px;
 			opacity: 0.75;
 			mask: url(assets.$icon_download) center/18px no-repeat;
-			.metadataIcon-3QMhu9 {
+			%playerMetadataIcon {
 				display: none;
 			}
 			&:hover {
@@ -205,7 +205,7 @@
 			}
 		}
 	}
-	.metadataContent-lalfZ3 {
+	%playerMetadataContent {
 		padding: 0;
 	}
 }

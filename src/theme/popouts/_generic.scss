@@ -1,4 +1,4 @@
-#app-mount .popouts-2bnG9Z .popout-2iWAc- {
+#app-mount %popouts %popout {
 	background: var(--background);
 	box-shadow: var(--elevation-1) !important;
 	border-radius: var(--border-radius);
@@ -6,12 +6,12 @@
 	transform: none !important;
 }
 
-.full-motion body .translate-PeW1wK {
+.full-motion body %popoutTranslate {
 	transform: none !important;
 	-webkit-transform: none !important;
 	transition: none;
 }
 
-.layer-2aCOJ3 {
+%popoutLayer {
 	z-index: 1;
 }

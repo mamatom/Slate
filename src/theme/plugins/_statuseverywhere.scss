@@ -1,9 +1,9 @@
 // StatusEverywhere by Zerebos
-#app-mount .cozy-VmLDNB .wrapper-1VLyxH.avatar-2e8lTP {
+#app-mount %cozy %avatarWrapper%avatarLarge {
 	box-shadow: none !important;
 	overflow: visible !important;
 
-	.pointerEvents-9SZWKj {
+	%statusPointerEvents {
 		y: calc(var(--avatar-size) + 4px);
 		x: calc(var(--avatar-size) + 4px);
 	}

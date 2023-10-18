@@ -1,51 +1,51 @@
 #app-mount {
 	.content-1SgpWY {
-		.sidebar-1tnWFu
-			.scrollerBase-_bVAAt[style='overflow: hidden scroll; padding-right: 0px;']:not([id*='channels']) {
+		%channelsSidebar
+			%scroller[style='overflow: hidden scroll; padding-right: 0px;']:not([id*='channels']) {
 			border-right: 1px solid var(--base-border);
 			margin-top: calc(var(--toolbar-height) / -1);
 			&::-webkit-scrollbar {
 				display: none;
 			}
 		}
-		.categoryItem-1QIroW {
+		%discoverCategoryItem {
 			margin: 0;
 			padding: 0;
-			.layout-1qmrhw {
+			%memberLayout {
 				border-radius: 0;
 				padding: var(--spacing);
 				cursor: var(--cursor);
 			}
-			.avatar-6qzftW {
+			%memberAvatar {
 				width: 20px;
 				height: 20px;
 			}
-			.name-3Vmqxm {
+			%memberName {
 				font-size: var(--font-size);
 			}
 
-			&.selected-1-Z6gm .layout-1qmrhw {
+			&%memberSelected %memberLayout {
 				background: rgb(var(--accent));
 			}
 		}
 	}
 
-	.pageWrapper-2PwDoS {
+	%pageWrapper {
 		background: var(--background-alt);
-		.scroller-2FKFPG {
+		%scroller {
 			margin-top: var(--toolbar-height);
 			padding-top: 50px;
 		}
-		.bg-AYqtMd {
+		%discoveryBG {
 			display: none;
 		}
-		.pageHeader-3615mp {
+		%pageHeader {
 			height: 0;
 		}
-		.mainHeader-1i17pL {
+		%discoveryMainHeader {
 			display: none;
 		}
-		.body-2lagau::before {
+		%pageBody::before {
 			content: '';
 			height: var(--toolbar-height);
 			background: var(--toolbar-background);
@@ -56,10 +56,10 @@
 			border-bottom: 1px solid var(--toolbar-border);
 			z-index: 10;
 		}
-		.searchHelpText-19imBp {
+		%searchHelpText {
 			display: none;
 		}
-		.search-JQJ-3r {
+		%discoverySearch {
 			position: fixed;
 			top: 21px;
 			left: var(--base-left);
@@ -69,12 +69,12 @@
 			justify-content: flex-start;
 			height: var(--toolbar-height);
 		}
-		.searchBox-26HYGw {
+		%discoverySearchBox {
 			flex: none;
 			width: calc(100% - 196px);
 			border-right: 1px solid var(--toolbar-border);
 		}
-		.searchBox-pyIJJj {
+		%searchBox {
 			background-color: transparent;
 			box-shadow: none;
 			border: none;
@@ -109,7 +109,7 @@
 			background: var(--background-dark);
 			border: 1px solid var(--base-border);
 		}
-		.card-2TuZPZ {
+		%discoverGuildCard {
 			background-color: var(--background-dark);
 			border: 1px solid var(--base-border);
 			box-shadow: none;
@@ -121,7 +121,7 @@
 		.description-19gINd {
 			display: none;
 		}
-		.guildInfo-PdhToW {
+		%discoverGuildInfo {
 			position: absolute;
 			bottom: 0;
 			width: 100%;
@@ -133,27 +133,27 @@
 				opacity: 0.7;
 			}
 		}
-		.guildIcon-1nnIAv {
+		%discoverGuildIcon {
 			bottom: unset;
 			top: var(--spacing);
 			left: var(--spacing);
 		}
-		.iconMask-2fMR98 {
+		%discoverGuildCardIcon {
 			background: rgb(0, 0, 0, 0.5);
 		}
-		.roundButton-2CW1Hh {
+		%discoveryPageButtonRound {
 			border-radius: var(--border-radius);
 			&:hover {
 				background: var(--background-dark);
 			}
 		}
-		.activeButton-1BJAiN {
+		%discoveryPageButtonActive {
 			background: var(--accent-solid);
 			&:hover {
 				background: var(--accent-solid);
 			}
 		}
-		.lookFilled-1Gx00P.colorTransparent-1ewNp9 {
+		%buttonFilled.colorTransparent-1ewNp9 {
 			padding: var(--spacing);
 			min-height: unset;
 			height: auto;

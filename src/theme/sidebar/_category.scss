@@ -1,18 +1,18 @@
-#app-mount .sidebar-1tnWFu {
-	.containerDefault-3TQ5YN,
-	.containerDragAfter-3TEhpe,
-	.containerDragBefore-3Dzc5x,
-	.containerUserOver-1Tcb7l {
+#app-mount %channelsSidebar {
+	%categoryContainerDefault,
+	%categoryContainerDragAfter,
+	%categoryContainerDragBefore,
+	%categoryContainerUserOver {
 		padding: var(--spacing-half) 0;
-		.wrapper-1S43wv {
+		%categoryWrapper {
 			color: var(--text-normal);
 			height: 26px;
 			padding-right: var(--spacing);
 			padding-left: 20px;
 			cursor: var(--cursor);
 			svg,
-			.name-3BUDLf,
-			.container-36u7Lw {
+			%categoryName,
+			%libraryContainer {
 				color: var(--text-normal);
 				font-size: var(--font-size-sm);
 				font-weight: var(--font-weight-semibold);
@@ -22,14 +22,14 @@
 				left: 4px;
 				top: 7px;
 			}
-			.name-3BUDLf,
-			.container-36u7Lw {
+			%categoryName,
+			%libraryContainer {
 				text-transform: none;
 			}
-			&.muted-1NRuDm {
+			&%categoryWrapperMuted {
 				color: var(--text-muted);
 				svg,
-				.name-3BUDLf {
+				%categoryName {
 					color: var(--text-muted);
 				}
 			}

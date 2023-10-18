@@ -1,7 +1,7 @@
 #app-mount {
-	.input-1nrc5P,
-	.input-2g-os5,
-	.input-2lpFVz {
+	%headerBarInput,
+	%input,
+	%autocompletePopoutInput {
 		border-radius: var(--border-radius);
 		background: var(--background-dark);
 		font-size: var(--font-size);
@@ -14,7 +14,7 @@
 		line-height: 24px;
 		box-sizing: border-box;
 		&:focus,
-		.focused-1AtTHC {
+		%inputFocused {
 			border: 1px solid var(--accent-solid);
 			box-shadow: 0 0 0 2px rgb(var(--accent), 0.25);
 		}
@@ -56,7 +56,7 @@
 		padding-left: calc(var(--spacing-double) + 8px);
 	}
 
-	.inputWrapper-1YNMmM {
+	%inputWrapper {
 		flex-grow: 1;
 		.inputPrefix-1VU7MB {
 			display: none;
@@ -89,10 +89,10 @@
 }
 
 // Light Mode
-html.theme-light #app-mount {
-	.input-1nrc5P,
-	.input-2g-os5,
-	.input-2lpFVz {
+html%themeLight #app-mount {
+	%headerBarInput,
+	%input,
+	%autocompletePopoutInput {
 		background: var(--background);
 	}
 }

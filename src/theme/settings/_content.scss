@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) .contentRegion-3HkfJJ {
+#app-mount %layer:not(.baseLayer-W6S8cY) %settingsContentRegion {
 	flex: unset;
 	flex-grow: 1;
 	background: transparent;
@@ -68,7 +68,7 @@
 			margin: 0;
 			&:hover {
 				border: 1px solid currentColor;
-				.contents-3ca1mk {
+				%forumTagClear {
 					background-image: none;
 				}
 			}
@@ -80,7 +80,7 @@
 	}
 
 	// Close button
-	.toolsContainer-25FL6V {
+	%settingsToolsContainer {
 		padding-top: 0;
 		width: auto;
 		height: 50px;
@@ -91,9 +91,9 @@
 		margin: 0;
 		right: calc(var(--spacing) * 1.5);
 	}
-	.tools-kIrEGr {
+	%settingsTools {
 		position: relative;
-		.closeButton-PCZcma {
+		%settingsCloseButton {
 			border: none;
 			width: 16px;
 			height: 16px;
@@ -124,7 +124,7 @@
 				cursor: var(--cursor);
 			}
 		}
-		.keybind-13vtq8 {
+		%settingsCloseButtonKeybind {
 			display: none;
 		}
 	}
@@ -143,7 +143,7 @@
 		line-height: unset;
 		text-transform: none;
 	}
-	.marginBottom40-fvAlAV h5 + .children-1xdcWE .marginTop8-24uXGp.flex-1xMQg5:first-child {
+	.marginBottom40-fvAlAV h5 + %paymentinfo .marginTop8-24uXGp.flex-1xMQg5:first-child {
 		margin-top: 0;
 	}
 	.title-2dsDLn,
@@ -166,7 +166,7 @@
 	.row-1Tg75B {
 		box-shadow: none;
 	}
-	.control-1fl03- {
+	%switch {
 		margin: 0;
 		order: -1;
 		margin-right: var(--spacing-half) !important;
@@ -185,7 +185,7 @@
 	.titleDefault-3GR-DE {
 		cursor: var(--cursor);
 	}
-	.switchItem-2hKKKK {
+	%switchItem {
 		margin: 0;
 		.description-30xx7u {
 			margin-bottom: var(--spacing);
@@ -212,7 +212,7 @@
 	}
 
 	// Content dividers
-	.children-1xdcWE > .marginBottom40-fvAlAV {
+	%paymentinfo > .marginBottom40-fvAlAV {
 		margin-bottom: var(--spacing-double);
 		&:last-child {
 			margin-bottom: 0;
@@ -250,10 +250,10 @@
 
 // Light Mode
 
-html.theme-light
+html%themeLight
 	#app-mount
-	.layer-86YKbF:not(.baseLayer-W6S8cY)
-	.contentRegion-3HkfJJ
+	%layer:not(.baseLayer-W6S8cY)
+	%settingsContentRegion
 	.streamerModeEnabled-2q0Gft
 	.streamerModeEnabledBtn-2nlJTD {
 	&:hover {

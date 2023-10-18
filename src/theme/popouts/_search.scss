@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .layer-2aCOJ3[style*='left'][style*='top'] .container-2McqkF.elevationBorderHigh-3drnJX {
+#app-mount %popoutLayer[style*='left'][style*='top'] %searchPopout.elevationBorderHigh-3drnJX {
 	margin-top: 8px;
 	background: var(--background);
 	box-shadow: var(--elevation-1);
@@ -38,7 +38,7 @@
 		clip-path: polygon(0 100%, 100% 100%, 100% 0);
 		box-shadow: var(--elevation-1);
 	}
-	.queryContainer-ZunrLZ {
+	%searchPopoutQueryContainer {
 		background: var(--background);
 		border-bottom: 1px solid var(--base-border);
 		box-sizing: border-box;
@@ -55,7 +55,7 @@
 		&:only-child {
 			border: none;
 		}
-		.keybindShortcutSearchPopout-pt_bn5 {
+		%searchPopoutKeybindShortcut {
 			height: auto;
 			width: auto;
 			margin-left: var(--spacing);
@@ -74,7 +74,7 @@
 				border: none;
 			}
 		}
-		.queryText-j8z984 {
+		%searchPopoutQueryText {
 			line-height: normal;
 			font-weight: var(--font-weight-normal);
 			font-size: var(--font-size);
@@ -87,21 +87,21 @@
 			}
 		}
 	}
-	.resultsGroup-cfY57t {
+	%searchPopoutResultsGroup {
 		margin: 0;
 		padding: 0;
 		&::before {
 			content: none;
 		}
-		.header-1BR0Ro {
+		%searchPopoutHeader {
 			color: var(--text-normal);
 			font-size: var(--font-size);
 			text-transform: none;
 			font-weight: var(--font-weight-semibold);
 			padding: var(--spacing);
 		}
-		.searchLearnMore-7__o_n,
-		.searchClearHistory-2Be-92 {
+		%searchPopoutLearnMore,
+		%searchPopoutClearHistory {
 			color: var(--text-muted);
 			opacity: 1;
 			right: var(--spacing);
@@ -113,7 +113,7 @@
 				color: var(--text-normal);
 			}
 		}
-		.option-ayUoaq {
+		%searchPopoutOption {
 			margin: 0;
 			padding: 0 var(--spacing);
 			height: var(--item-height);
@@ -123,7 +123,7 @@
 			&::after {
 				background: none;
 			}
-			&.selected-rZcOL- {
+			&%searchPopoutOptionSelected {
 				background: var(--background-modifier-hover);
 				&::after {
 					background: linear-gradient(90deg, transparent, var(--background-modifier-hover));
@@ -144,32 +144,32 @@
 				width: var(--avatar-size-xsm);
 				height: var(--avatar-size-xsm);
 			}
-			.nonText-3_4gtu {
+			%searchPopoutNonText {
 				color: var(--text-normal);
 				font-weight: var(--font-weight-normal);
 				margin-right: var(--spacing-half);
 				line-height: normal;
 			}
-			.displayedNick-2dDbfG {
+			%searchPopoutDisplayedNick {
 				color: var(--text-normal);
 				font-weight: var(--font-weight-semibold);
 				margin: 0 var(--spacing-half);
 				line-height: normal;
 			}
-			.displayUsername-14aOpK,
-			.searchResultChannelCategory-3cL8uG,
-			.searchResultChannelIcon-1Il1Qo {
+			%searchPopoutDisplayUsername,
+			%searchPopoutChannelCategory,
+			%searchPopoutChannelIcon {
 				color: var(--text-muted);
 				font-size: var(--font-size);
 				font-weight: var(--font-weight-normal);
 				text-transform: none;
 				line-height: normal;
 			}
-			.searchResultChannelCategory-3cL8uG {
+			%searchPopoutChannelCategory {
 				top: 0;
 				margin-left: var(--spacing-half);
 			}
-			.filter-2QaH9y {
+			%searchPopoutFilter {
 				line-height: var(--line-height);
 				border-radius: var(--border-radius);
 				padding: var(--spacing-third) var(--spacing-half);
@@ -179,21 +179,21 @@
 				font-weight: var(--font-weight-normal);
 				user-select: none;
 			}
-			.answer-14OVbQ {
+			%searchPopoutAnswer {
 				color: var(--text-normal);
 				font-weight: var(--font-weight-normal);
 				margin-left: 0;
 				margin-right: var(--spacing-half);
 				line-height: normal;
 			}
-			.searchResultChannelIcon-1Il1Qo {
+			%searchPopoutChannelIcon {
 				display: none;
 				& + strong::before {
 					content: '#';
 					color: var(--text-muted);
 				}
 			}
-			.plusIcon-1RVszG {
+			%searchPopoutPlusIcon {
 				right: var(--spacing);
 				opacity: 1;
 				background: var(--text-muted);
@@ -210,17 +210,17 @@
 			}
 		}
 	}
-	.datePickerHint-17MnA8 {
+	%searchPopoutDatePickerHint {
 		padding: var(--spacing);
 		margin: 0;
 		display: flex;
 		align-items: center;
-		.hint-3D5yHh {
+		%searchPopoutHint {
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
 			color: var(--text-muted);
 		}
-		.hintValue-1x-flY {
+		%searchPopoutHintValue {
 			line-height: var(--line-height);
 			border-radius: var(--border-radius);
 			padding: var(--spacing-third) var(--spacing-half);

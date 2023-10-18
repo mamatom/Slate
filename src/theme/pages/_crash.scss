@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .errorPage-2pZ2Kq {
+#app-mount %errorPage {
 	background: var(--background);
 	box-sizing: border-box;
 	order: 1;
@@ -8,7 +8,7 @@
 		justify-content: flex-start;
 		align-items: flex-start;
 		padding: calc(var(--spacing) * 4);
-		.image-35kDIs {
+		%errorPageImage {
 			position: absolute;
 			right: var(--spacing);
 			bottom: var(--spacing);
@@ -17,10 +17,10 @@
 			background: var(--text-muted);
 			mask: url(assets.$illustration_10) center/contain no-repeat;
 		}
-		.text-3IbNaT {
+		%errorPageText {
 			width: 100%;
 			margin-bottom: var(--spacing-double);
-			.note-Ph806N,
+			%errorPageNote,
 			.title-NjUt5y {
 				text-align: left;
 			}
@@ -46,7 +46,7 @@
 					mask: url(assets.$icon_stop) center/contain no-repeat;
 				}
 			}
-			.note-Ph806N {
+			%errorPageNote {
 				font-size: var(--font-size);
 				color: var(--text-normal);
 				font-weight: var(--font-weight-normal);

@@ -1,4 +1,4 @@
-#app-mount .root-g14mjS {
+#app-mount %modalRoot {
 	.inner-ZyuQk0 {
 		padding: var(--spacing);
 	}
@@ -11,11 +11,11 @@
 		border: 1px solid var(--base-border);
 		padding: var(--spacing);
 		box-sizing: border-box;
-		.cozy-VmLDNB {
+		%cozy {
 			padding-bottom: 0;
 			margin-top: 0;
 		}
-		.avatar-2e8lTP {
+		%avatarLarge {
 			top: 0;
 		}
 	}

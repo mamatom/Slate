@@ -2,17 +2,17 @@
 	.uploadArea-2Nu_Vc {
 		background: var(--backdrop);
 	}
-	.uploadDropModal-13Kd20 {
+	%uploadDropModal {
 		height: auto;
 		padding: var(--spacing-double) 0;
 
-		.bgScale-1iWuPF {
+		%uploadDropModalBgScale {
 			background: var(--background);
 			border-radius: var(--border-radius);
 			box-shadow: var(--elevation-1);
 			border: 1px solid var(--base-border);
 		}
-		.inner-rBP-MS {
+		%uploadDropModalInner {
 			border: none;
 			border-radius: 0;
 		}

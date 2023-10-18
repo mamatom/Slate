@@ -1,13 +1,13 @@
 @use '../assets';
 
-#app-mount .wrapper-1gVUIN {
+#app-mount %callWrapper {
 	background: var(--background);
 	border-bottom: 1px solid var(--base-border);
 	z-index: 100;
 	.videoControls-353CsJ {
 		padding: 0 var(--spacing) var(--spacing);
 	}
-	.gradientContainer-phMG8d {
+	%stageGradientContainer {
 		opacity: 0.5;
 	}
 	.videoWrapper-2v09vt {
@@ -120,11 +120,11 @@
 	}
 	.root-24JyNP {
 		&[style*='padding-left: 0'] {
-			.tile-2TcwiO {
+			%callTile {
 				margin: 0 !important;
 			}
 		}
-		.participantsButton-1WBdFP {
+		%callParticipantsButton {
 			right: -2px;
 			padding: 0;
 			border-radius: var(--border-radius);
@@ -147,7 +147,7 @@
 		.tileSizer-3SnN8s {
 			margin-bottom: var(--spacing);
 			width: 100%;
-			.tile-2Dr6M1 {
+			%callUserTile {
 				margin-right: var(--spacing);
 			}
 		}
@@ -159,15 +159,15 @@
 	.wrapper-vj0FTk {
 		padding: 0 0 0 var(--spacing);
 	}
-	.tile-2TcwiO {
+	%callTile {
 		border-radius: var(--border-radius);
 		background: var(--background-alt);
 		margin-right: var(--spacing);
 		box-sizing: border-box;
-		.border-2Vy6FN {
+		%callTileBorder {
 			border-radius: var(--border-radius);
 			box-shadow: inset 0 0 0 1px var(--base-border);
-			&.speaking-7QZEkv {
+			&%callTileSpeaking {
 				box-shadow: inset 0 0 0 2px rgb(var(--accent));
 			}
 		}
@@ -189,7 +189,7 @@
 		border-radius: 0;
 		.elevationHigh-3KUiqj {
 			box-shadow: none;
-			.tile-2TcwiO {
+			%callTile {
 				box-shadow: none;
 			}
 		}
@@ -271,7 +271,7 @@
 		&:active {
 			background: var(--background-modifier-active);
 		}
-		&.active-3D763s {
+		&%callButtonActive {
 			border-right: none;
 			border-radius: var(--border-radius) 0 0 var(--border-radius);
 		}
@@ -289,7 +289,7 @@
 		box-shadow: 0 0 0 0.75px var(--base-border);
 		overflow: hidden;
 		margin: 0;
-		.controlButton-2PMNom {
+		%callControlButton {
 			margin: 0;
 		}
 		.contextMenuNub-NuTZ_U {
@@ -298,7 +298,7 @@
 			border-radius: var(--border-radius);
 			color: var(--text-normal);
 			&:hover,
-			&.active-3D763s {
+			&%callButtonActive {
 				background: var(--background-dark);
 			}
 		}
@@ -348,7 +348,7 @@
 			&:active {
 				background: var(--background-modifier-active);
 			}
-			&.red-3T8maV {
+			&%callButtonRed {
 				background: rgb(var(--status-red));
 				border-left: 1px solid var(--base-border);
 				svg {

@@ -1,8 +1,8 @@
 #app-mount {
 	// Base css import version
-	.layer-86YKbF:not(.baseLayer-W6S8cY) .sidebar-nqHbhN .info-1sUqUG {
+	%layer:not(.baseLayer-W6S8cY) %settingsSidebar .info-1sUqUG {
 		padding: calc(var(--spacing) / 3) var(--spacing-double);
-		.colorMuted-20987_.line-33oL9j:first-of-type::before {
+		%activityFeedColorMuted.line-33oL9j:first-of-type::before {
 			content: 'Slate base ' var(--slate-base-version) ' (' var(--slate-palette) ')';
 			display: block;
 			text-transform: none;

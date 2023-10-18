@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .layer-86YKbF[aria-label='CHANNEL_SETTINGS'] {
+#app-mount %layer[aria-label='CHANNEL_SETTINGS'] {
 	.customContainer-dK1ozq {
 		position: relative;
 		div[style='height: 60px;'] {
@@ -12,7 +12,7 @@
 		margin: 0;
 		max-width: 100%;
 	}
-	.image-20MDYu {
+	%noChannelImage {
 		width: 156px !important;
 		height: 156px !important;
 		margin-bottom: var(--spacing-double);

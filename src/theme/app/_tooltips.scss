@@ -1,5 +1,5 @@
 #app-mount {
-	.tooltip-33Jwqe,
+	%tooltip,
 	.subscribeTooltipWrapper-32-Ce8 {
 		padding: var(--spacing-third) var(--spacing);
 		border-radius: var(--border-radius);
@@ -33,10 +33,10 @@
 				margin-top: var(--spacing);
 			}
 		}
-		.tooltipContent-38tm3I {
+		%tooltipContent {
 			padding: 0;
 		}
-		.tooltipPointer-sMBQqe,
+		%tooltipPointer,
 		&.subscribeTooltipWrapper-32-Ce8::after {
 			background: var(--background);
 			border: 1px solid var(--base-border);
@@ -44,20 +44,20 @@
 			height: 8px;
 			clip-path: polygon(100% 0, 0% 100%, 0 0);
 		}
-		&.tooltipRight-1UPNyA .tooltipPointer-sMBQqe {
+		&%tooltipRight %tooltipPointer {
 			transform: rotate(-45deg);
 			margin-right: -5px;
 		}
-		&.tooltipLeft-3H43DQ .tooltipPointer-sMBQqe {
+		&%tooltipLeft %tooltipPointer {
 			transform: rotate(135deg);
 			margin-left: -5px;
 		}
-		&.tooltipBottom-1itlv3 .tooltipPointer-sMBQqe,
+		&%tooltipBottom %tooltipPointer,
 		&.subscribeTooltipWrapper-32-Ce8::after {
 			transform: rotate(45deg);
 			margin-bottom: -5px;
 		}
-		&.tooltipTop-CgYHUZ .tooltipPointer-sMBQqe {
+		&%tooltipTop %tooltipPointer {
 			transform: rotate(-135deg);
 			margin-top: -5px;
 		}
@@ -76,7 +76,7 @@
 			.avatar-2OcaMf {
 				margin-right: var(--spacing-half);
 			}
-			.discriminator-3-qTC0 {
+			%friendsColumnNameDiscriminator-3-qTC0 {
 				opacity: 1;
 				color: var(--text-muted);
 			}

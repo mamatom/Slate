@@ -1,6 +1,6 @@
-.theme-dark,
-html.theme-dark #app-mount .theme-light .root-g14mjS,
-html.theme-dark .force-theme.theme-light {
+%themeDark,
+html%themeDark #app-mount %themeLight %modalRoot,
+html%themeDark .force-theme%themeLight {
 	// Text and Borders
 	--base-border: #141414;
 	--text-normal: #d1d5da;

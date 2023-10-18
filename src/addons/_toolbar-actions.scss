@@ -1,17 +1,17 @@
-html.platform-win[lang='en-US'],
-html.platform-win[lang='en-GB'] {
+html%platformWin[lang='en-US'],
+html%platformWin[lang='en-GB'] {
 	body:not(.oldTitleBarEnabled-D8ppJQ)
-		.container-2cd8Mz
-		.container-ZMc96U.themed-Hp1KC_
-		.toolbar-3_r2xA {
+		%friends
+		%headerBar.themed-Hp1KC_
+		%toolbar {
 		border: none !important;
 	}
-	body:not(.oldTitleBarEnabled-D8ppJQ) .container-ZMc96U.themed-Hp1KC_ .toolbar-3_r2xA {
-		.iconWrapper-2awDjA[aria-label='Inbox'],
-		.iconWrapper-2awDjA[aria-label='Pinned Messages'],
-		.iconWrapper-2awDjA[aria-label='Add Friends to DM'],
-		.iconWrapper-2awDjA[aria-label='New Group DM'],
-		.anchor-1MIwyf .iconWrapper-2awDjA {
+	body:not(.oldTitleBarEnabled-D8ppJQ) %headerBar.themed-Hp1KC_ %toolbar {
+		%headerBarIconWrapper[aria-label='Inbox'],
+		%headerBarIconWrapper[aria-label='Pinned Messages'],
+		%headerBarIconWrapper[aria-label='Add Friends to DM'],
+		%headerBarIconWrapper[aria-label='New Group DM'],
+		%anchor %headerBarIconWrapper {
 			position: fixed;
 			top: 0;
 			-webkit-app-region: no-drag;
@@ -48,7 +48,7 @@ html.platform-win[lang='en-GB'] {
 				&::after {
 					content: 'Pins';
 				}
-				.iconBadge-3Mmg92 {
+				%headerBarIconBadge {
 					top: 4px;
 					right: 4px;
 					z-index: -1;
@@ -71,7 +71,7 @@ html.platform-win[lang='en-GB'] {
 				background: var(--toolbar-background-hover);
 			}
 			&:active,
-			&.selected-29KTGM {
+			&%headerBarIconSelected {
 				background: var(--toolbar-background-active);
 			}
 			svg {
@@ -81,24 +81,24 @@ html.platform-win[lang='en-GB'] {
 		.inviteToolbar-2k2nqz {
 			display: block !important;
 		}
-		.inviteToolbar-2k2nqz ~ .anchor-1MIwyf .iconWrapper-2awDjA {
+		.inviteToolbar-2k2nqz ~ %anchor %headerBarIconWrapper {
 			left: 142px;
 		}
-		.libraryFilter-1nwg6T ~ .anchor-1MIwyf .iconWrapper-2awDjA {
+		%librarySearch ~ %anchor %headerBarIconWrapper {
 			left: 88px;
 		}
-		.iconWrapper-2awDjA[aria-label='Add Friends to DM'] ~ .anchor-1MIwyf .iconWrapper-2awDjA {
+		%headerBarIconWrapper[aria-label='Add Friends to DM'] ~ %anchor %headerBarIconWrapper {
 			left: 184px;
 		}
-		.anchor-1MIwyf {
+		%anchor {
 			display: block !important;
-			&:nth-child(8) .iconWrapper-2awDjA {
+			&:nth-child(8) %headerBarIconWrapper {
 				left: 184px;
 			}
-			&:nth-child(6) .iconWrapper-2awDjA {
+			&:nth-child(6) %headerBarIconWrapper {
 				left: 130px;
 			}
-			.iconWrapper-2awDjA {
+			%headerBarIconWrapper {
 				width: auto;
 				left: 130px;
 				&::after {
@@ -110,17 +110,17 @@ html.platform-win[lang='en-GB'] {
 }
 
 // Unfocused App
-html.platform-win[lang='en-US'],
-html.platform-win[lang='en-GB'] {
+html%platformWin[lang='en-US'],
+html%platformWin[lang='en-GB'] {
 	&:not(.app-focused)
 		body:not(.oldTitleBarEnabled-D8ppJQ)
-		.container-ZMc96U.themed-Hp1KC_
-		.toolbar-3_r2xA {
-		.iconWrapper-2awDjA[aria-label='Inbox'],
-		.iconWrapper-2awDjA[aria-label='Pinned Messages'],
-		.iconWrapper-2awDjA[aria-label='Add Friends to DM'],
-		.iconWrapper-2awDjA[aria-label='New Group DM'],
-		.anchor-1MIwyf .iconWrapper-2awDjA {
+		%headerBar.themed-Hp1KC_
+		%toolbar {
+		%headerBarIconWrapper[aria-label='Inbox'],
+		%headerBarIconWrapper[aria-label='Pinned Messages'],
+		%headerBarIconWrapper[aria-label='Add Friends to DM'],
+		%headerBarIconWrapper[aria-label='New Group DM'],
+		%anchor %headerBarIconWrapper {
 			opacity: 0.6;
 		}
 	}

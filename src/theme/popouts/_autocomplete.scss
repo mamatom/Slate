@@ -1,4 +1,4 @@
-#app-mount .autocomplete-3NRXG8 {
+#app-mount %autocomplete {
 	background: var(--background);
 	border-radius: var(--border-radius);
 	border: 1px solid var(--base-border);
@@ -6,13 +6,13 @@
 	margin-left: calc((var(--spacing-double) + var(--avatar-size-sm)) * -1 + var(--spacing));
 	bottom: calc(100% + var(--spacing-double));
 	max-height: 272px;
-	.wrapper-1VLyxH {
+	%avatarWrapper {
 		height: var(--avatar-size-xsm) !important;
 		width: var(--avatar-size-xsm) !important;
 	}
 
 	// Leftside
-	.wrapper-3z7DuG {
+	%autocompleteListWrapper {
 		padding-bottom: 0;
 		margin-bottom: 0;
 		width: 38px;
@@ -25,20 +25,20 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			&.selected-3B2w1z {
+			&%autocompleteListItemSelected {
 				background: rgb(var(--accent), 1);
 			}
 		}
 	}
-	.wrapper-22rqw6 {
+	%stickerCategoryWrapper {
 		background: var(--background-dark);
 	}
-	.listItems-6eZzQ1 {
+	%autocompleteListItems {
 		inset: 0 !important;
 	}
 
 	// Right side
-	.scrollerBase-_bVAAt {
+	%scroller {
 		max-height: 272px !important;
 		padding-bottom: 0;
 		& > div[aria-hidden='true'] {
@@ -52,13 +52,13 @@
 		margin-bottom: 0;
 		background: var(--background);
 	}
-	.base-2v-uc0 {
+	%autocompleteBase {
 		border-radius: 0;
 		align-items: center;
 		height: var(--item-height);
 		display: flex;
 		padding: 0 var(--spacing);
-		.contentTitle-3CylD3 {
+		%autocompleteTitle {
 			color: var(--text-normal);
 			text-transform: none;
 			font-size: var(--font-size);
@@ -94,10 +94,10 @@
 	.colorInteractiveActive-30E9n8 {
 		font-size: var(--font-size);
 	}
-	.autocompleteInner-y1mjDl {
+	%autocompleteInner {
 		padding-bottom: 0;
 	}
-	.option-Tt7anD {
+	%autocompleteOption {
 		line-height: var(--line-height);
 		border-radius: var(--border-radius);
 		padding: var(--spacing-third) var(--spacing-half);
@@ -122,17 +122,17 @@
 		.selectable-1MM9tu {
 			cursor: var(--cursor);
 			&:hover,
-			&.selected-3H3-RC {
+			&%autocompleteSelectorSelected {
 				background: var(--background-modifier-hover);
 			}
 			&:active {
 				background: var(--background-modifier-active);
 			}
-			.content-Qb0rXO {
+			%autocompleteContent {
 				color: var(--text-normal);
 			}
 		}
-		.iconForeground-2P-YQq {
+		%autocompleteIconForeground {
 			fill: var(--text-muted);
 		}
 		.size14-3fJ-ot {
@@ -146,7 +146,7 @@
 				border-radius: var(--border-radius);
 				font-size: var(--font-size-sm);
 				line-height: normal;
-				& + .description-11DmNu {
+				& + %autocompleteDescription {
 					background: transparent !important;
 					margin: 0;
 					margin-left: auto;
@@ -160,19 +160,19 @@
 		display: flex;
 		align-items: center;
 	}
-	.colorStandard-21JIj7.flexChild-3PzYmX {
+	%activityFeedColorStandard.flexChild-3PzYmX {
 		margin: 0;
 	}
 	.divider-1bJsnZ {
 		background: var(--base-border);
 	}
-	.selector-2IcQBU {
+	%autocompleteSelector {
 		border-radius: 0;
 		padding: 0 var(--spacing);
 		display: flex;
 		align-items: center;
 		height: var(--item-height);
-		&.selectorSelected-1_M1WV {
+		&%autocompleteSelectorSelected {
 			background: var(--background-modifier-hover);
 		}
 	}
@@ -182,7 +182,7 @@
 		font-weight: var(--font-weight-normal);
 		margin-left: var(--spacing);
 	}
-	.description-11DmNu {
+	%autocompleteDescription {
 		line-height: var(--line-height);
 		border-radius: var(--border-radius);
 		padding: var(--spacing-third) var(--spacing-half);
@@ -193,7 +193,7 @@
 		flex-grow: 0;
 		display: inline-flex;
 		user-select: none;
-		.colorStandard-21JIj7 {
+		%activityFeedColorStandard {
 			color: inherit;
 			font-size: inherit;
 			font-weight: inherit;
@@ -202,7 +202,7 @@
 	}
 
 	// Emoji server name
-	.autocompleteRowContentSecondary-Oobh2b {
+	%autocompleteContentSecondary {
 		line-height: var(--line-height);
 		border-radius: var(--border-radius);
 		padding: var(--spacing-third) var(--spacing-half);
@@ -217,7 +217,7 @@
 	}
 }
 
-#app-mount .channelTextAreaUpload-3t7EIx .autocomplete-3NRXG8 {
+#app-mount .channelTextAreaUpload-3t7EIx %autocomplete {
 	margin: 0 !important;
 	bottom: unset;
 	top: calc(100% + var(--spacing-half) + 5px);

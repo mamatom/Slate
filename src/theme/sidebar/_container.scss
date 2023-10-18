@@ -1,13 +1,13 @@
 @use '../assets';
 
-#app-mount .sidebar-1tnWFu {
+#app-mount %channelsSidebar {
 	width: var(--sidebar-width);
 	border-radius: 0;
 	overflow: visible !important;
 	display: -webkit-box;
 	padding-top: var(--toolbar-height);
 	background: transparent;
-	.container-PNkimc {
+	%channelsContainer {
 		background: var(--background);
 	}
 	[class*='scroller-'] {
@@ -18,7 +18,7 @@
 		}
 	}
 	// Channel Notifications
-	.channelNotice-tO6Tus {
+	%channelNotice {
 		border-bottom: 1px solid var(--base-border);
 		box-shadow: none;
 		border-right: 1px solid var(--base-border);
@@ -55,7 +55,7 @@
 				mask: url(assets.$icon_lock) center/cover no-repeat;
 			}
 		}
-		&.quickswitcher-35bYg4 {
+		&%channelNoticeQuickswitcher {
 			padding-top: var(--spacing);
 			&::before {
 				content: '';
@@ -68,7 +68,7 @@
 				mask: url(assets.$icon_globe) center/cover no-repeat;
 			}
 		}
-		.message-3KLVy1 {
+		%channelNoticeMessage {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -77,10 +77,10 @@
 			font-size: var(--font-size);
 			line-height: normal;
 		}
-		.btn-38SvSS {
+		%channelNoticeMessageButton {
 			margin: var(--spacing) auto 0;
 		}
-		.close-2ISPTL {
+		%channelNoticeClose {
 			width: 16px;
 			height: 16px;
 			top: var(--spacing);
@@ -95,7 +95,7 @@
 				color: var(--text-normal);
 			}
 		}
-		&.invite-OjTXrW {
+		&%channelNoticeInvite {
 			background-image: none;
 			&::before {
 				content: '';

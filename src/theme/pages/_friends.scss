@@ -1,12 +1,12 @@
 @use '../assets';
 
-#app-mount .container-2cd8Mz {
+#app-mount %friends {
 	background: var(--background-alt);
-	.peopleColumn-1wMU14 .wrapper-1VLyxH {
+	%friendsColumn %avatarWrapper {
 		width: var(--avatar-size) !important;
 		height: var(--avatar-size) !important;
 	}
-	.topPill-3DJJNV {
+	%topPill {
 		position: absolute;
 		top: var(--toolbar-height);
 		left: 0;
@@ -32,7 +32,7 @@
 			&:hover {
 				background: var(--background-light) !important;
 			}
-			&.selected-g-kMVV,
+			&%topPillItemSelected,
 			&[style*='; color: rgb(67, 181, 129)'] {
 				box-shadow: inset 0 -3px 0px var(--accent-solid);
 				background: transparent !important;
@@ -40,23 +40,23 @@
 		}
 	}
 	@media (max-width: 1200px) {
-		.topPill-3DJJNV {
+		%topPill {
 			width: calc(100vw - var(--sidebar-width) - var(--noasw-base));
 		}
 	}
 	// List
-	.peopleColumn-1wMU14 {
+	%friendsColumn {
 		padding-top: 30px;
 	}
-	.peopleColumn-1wMU14 .scrollerBase-_bVAAt {
+	%friendsColumn %scroller {
 		margin-bottom: calc(var(--avatar-size-sm) + var(--spacing-double) - 6px);
 		margin-top: 0;
 		padding-bottom: 0;
 	}
-	.title-338goq {
+	%accountPanelUsername {
 		display: none;
 	}
-	.peopleListItem-u6dGxF {
+	%friendsItem {
 		border-top: none;
 		margin: 0;
 		padding: var(--spacing-double);
@@ -66,8 +66,8 @@
 		&:not(:first-child) {
 			border-bottom: 1px solid var(--base-border);
 		}
-		&.peopleListItem-u6dGxF.active-2UF8Zh,
-		&.peopleListItem-u6dGxF:hover {
+		&%friendsItem%friendsItemActive,
+		&%friendsItem:hover {
 			background: var(--background-modifier-hover);
 		}
 		&:active {
@@ -79,17 +79,17 @@
 		width: 100%;
 		flex: 1;
 	}
-	.nameTag-H6kSJ0 {
+	%userPopoutNameTag {
 		line-height: var(--line-height);
 	}
-	.username-Qpc78p {
+	%friendsColumnNameUsername-Qpc78p {
 		font-weight: var(--font-weight-normal);
 		line-height: normal;
 		font-size: var(--font-size);
 		color: var(--text-focus);
 		align-items: center;
 	}
-	.discriminator-WV5K5s {
+	%friendsColumnNameDiscriminator-WV5K5s {
 		font-size: var(--font-size-sm);
 	}
 	.text-MPIeXO {
@@ -103,7 +103,7 @@
 	.actions-OJh0Kn {
 		margin-left: var(--spacing);
 	}
-	.actionButton-3-B2x- {
+	%friendActionButton {
 		color: var(--text-normal);
 		background: var(--background-light);
 		min-height: var(--input-height);
@@ -133,13 +133,13 @@
 
 	// Empty State Messages
 
-	.image-20MDYu {
+	%noChannelImage {
 		margin: 0;
 		width: 175px !important;
 		height: 175px !important;
 		background: url(assets.$illustration_7) center/contain no-repeat !important;
 	}
-	.text-27cdrj {
+	%noChannelText {
 		display: none;
 	}
 }

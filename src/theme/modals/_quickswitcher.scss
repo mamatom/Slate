@@ -84,7 +84,7 @@
 		}
 	}
 	.note-OhIxFa,
-	.wrapper-3HVHpV,
+	%chatLoadingWrapper,
 	.autocompleteQuerySymbol-1iAOG7 {
 		margin-top: 0;
 		text-transform: none;
@@ -105,7 +105,7 @@
 		margin-right: var(--spacing-half);
 		font-size: var(--font-size);
 	}
-	.username-wzYIu4,
+	%friendsColumnNameUsername-wzYIu4,
 	.miscContainer-33U-X- {
 		opacity: 1;
 		color: var(--text-muted);
@@ -118,7 +118,7 @@
 	.resultFocused-3aIoYe {
 		.match-20K5f5,
 		.note-OhIxFa,
-		.username-wzYIu4,
+		%friendsColumnNameUsername-wzYIu4,
 		.miscContainer-33U-X-,
 		.icon-12xJtb {
 			color: var(--text-normal);

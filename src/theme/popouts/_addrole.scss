@@ -25,7 +25,7 @@
 		box-shadow: var(--elevation-1);
 	}
 
-	.container-2oNtJn {
+	%librarySearchBar {
 		padding: var(--spacing);
 	}
 
@@ -34,7 +34,7 @@
 		padding: 0;
 		border-top: 1px solid var(--base-border);
 	}
-	.item-1BCeuB {
+	%languageSelectorItem {
 		border-radius: 0;
 		padding: var(--spacing);
 		margin: 0;

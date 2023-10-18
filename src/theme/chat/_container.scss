@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .chat-2ZfjoI {
+#app-mount %chat {
 	background: var(--background-alt);
 
 	// Thread opened
@@ -53,13 +53,13 @@
 			max-width: calc(100% - var(--avatar-size-xl) - var(--spacing-double) - var(--spacing));
 			user-select: text;
 		}
-		.wrapper-1VLyxH {
+		%avatarWrapper {
 			width: var(--avatar-size-xl) !important;
 			height: var(--avatar-size-xl) !important;
 			position: absolute;
 			right: var(--spacing-double);
 		}
-		.emptyChannelIcon-1YdEz2 {
+		%emptyChannelIcon {
 			background: url(assets.$illustration_7) center/cover no-repeat;
 			border-radius: 0;
 			position: absolute;
@@ -127,7 +127,7 @@
 				line-height: normal;
 			}
 			.cardWrapper-2fBdfM {
-				.card-PQEqCK {
+				%serverWelcomeCards {
 					margin: 0;
 					border-radius: 0;
 					background: transparent;
@@ -138,7 +138,7 @@
 					.icon-2ou77m {
 						display: none;
 					}
-					.checkmark-bW9BK8 {
+					%serverInviteTick {
 						background: transparent;
 						padding: 0;
 						color: rgb(var(--status-green));
@@ -153,12 +153,12 @@
 						opacity: 1;
 					}
 				}
-				&:nth-child(2) .card-PQEqCK {
+				&:nth-child(2) %serverWelcomeCards {
 					border-top: 1px solid var(--base-border);
 					border-radius: 3px 3px 0 0;
 					margin-top: var(--spacing-double);
 				}
-				&:last-child .card-PQEqCK {
+				&:last-child %serverWelcomeCards {
 					border-radius: 0 0 3px 3px;
 				}
 			}

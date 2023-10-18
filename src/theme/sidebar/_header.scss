@@ -1,11 +1,11 @@
-#app-mount .sidebar-1tnWFu {
+#app-mount %channelsSidebar {
 	// Server dropdown selected
-	.container-1-ERn5 {
+	%channelsHeaderContainer {
 		background: var(--toolbar-background);
-		&.selected-1GtAC5 .header-3OsQeK {
+		&.selected-1GtAC5 %channelsHeader {
 			background: var(--background);
 			border-bottom: 1px solid transparent;
-			.name-3Uvkvr {
+			%channelsHeaderName {
 				color: var(--toolbar-text-normal);
 			}
 			.button-2BMPJJ {
@@ -13,7 +13,7 @@
 			}
 		}
 	}
-	.header-3OsQeK {
+	%channelsHeader {
 		box-shadow: none;
 		border-bottom: 1px solid var(--toolbar-border);
 		border-right: 1px solid var(--toolbar-border);
@@ -28,27 +28,27 @@
 		z-index: 11;
 		filter: none;
 		cursor: var(--cursor);
-		.guildIconContainer-3QvE6w {
+		%channelsHeaderGuildBadge {
 			margin-right: var(--spacing);
 			.disableColor-MwOAZf,
 			.iconBackgroundTierNone-3MPhMJ,
-			.iconBackgroundTierOne-2LhaMB,
-			.iconBackgroundTierThree-3qw3JX,
-			.iconBackgroundTierTwo-3bCmdc {
+			%guildBoostedIconTier1,
+			%guildBoostedIconTier3,
+			%guildBoostedIconTier2 {
 				color: var(--toolbar-background-active);
 			}
 			.iconTierNone-3xOaeG {
 				color: var(--toolbar-text-muted);
 			}
-			.bannerVisible-14J9lQ .iconBackgroundTierOne-2LhaMB,
-			.bannerVisible-14J9lQ .iconBackgroundTierThree-3qw3JX,
-			.bannerVisible-14J9lQ .iconBackgroundTierTwo-3bCmdc,
+			.bannerVisible-14J9lQ %guildBoostedIconTier1,
+			.bannerVisible-14J9lQ %guildBoostedIconTier3,
+			.bannerVisible-14J9lQ %guildBoostedIconTier2,
 			.iconTierOne-BHC2T8,
 			.iconTierTwo-_1edeM {
 				color: var(--toolbar-text-normal);
 			}
 		}
-		.name-3Uvkvr {
+		%channelsHeaderName {
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-semibold);
 			color: var(--toolbar-text-normal);
@@ -84,7 +84,7 @@
 		}
 		&:hover {
 			background-color: var(--toolbar-background-hover);
-			.name-3YKhmS {
+			%channelsHeaderName {
 				color: var(--toolbar-text-focus);
 			}
 			.button-2BMPJJ {
@@ -93,13 +93,13 @@
 		}
 	}
 	// Banner image
-	.animatedContainer-2laTjx {
+	%bannerAnimatedContainer {
 		box-shadow: none;
 		mask: linear-gradient(rgb(0, 0, 0, 0.9) 0%, rgb(0, 0, 0, 0) 90%) !important;
 		z-index: 10;
 		pointer-events: none;
 	}
-	.bannerImage-ubW8K- {
+	%bannerImage {
 		width: var(--sidebar-width);
 		top: 0;
 	}
@@ -110,15 +110,15 @@
 
 // Verified Guild (Global Component)
 
-.verified-1Jv_7P {
+%guildVerified {
 	color: rgb(var(--status-green));
 }
-.partnered-23cXFN {
+%guildPartnered {
 	color: var(--accent-solid);
 }
 
 // Light Mode
-.theme-light #app-mount .sidebar-1tnWFu .container-2Rl01u.selected-WP3kCM .header-3OsQeK {
+%themeLight #app-mount %channelsSidebar %channelsHeaderContainer.selected-WP3kCM %channelsHeader {
 	border-right: none;
 	h1 {
 		color: var(--text-focus);

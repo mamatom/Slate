@@ -1,7 +1,7 @@
 @use '../assets';
 
 #app-mount {
-	.nowPlayingColumn-1eCBCN {
+	%nowPlayingColumn {
 		border-left: 1px solid var(--base-border);
 		background: var(--background);
 		min-width: unset;
@@ -9,10 +9,10 @@
 		flex: 0 0 calc(var(--sidebar-width) * 1.5);
 		width: calc(var(--sidebar-width) * 1.5);
 	}
-	.container-1oAagU {
+	%nowPlayingColumnContainer {
 		background: transparent;
 	}
-	.scroller-hE2gWq {
+	%nowPlayingColumnScroller {
 		height: calc(100vh - var(--titlebar-height) - var(--toolbar-height));
 		padding: 0 !important;
 		margin: 0;
@@ -31,7 +31,7 @@
 		padding: 0 var(--spacing);
 		border-bottom: 1px solid var(--base-border);
 	}
-	.consentCard-1iSxB_ {
+	%consentCard {
 		background: var(--background);
 		border-radius: 0;
 		padding: var(--spacing-double);
@@ -53,15 +53,15 @@
 			height: 48px;
 		}
 	}
-	.emptyCard-KDifrB {
+	%emptyActiveNowCard {
 		border-radius: 0;
 		background: transparent;
 		padding: var(--spacing-double);
-		.emptyText-29ycwI {
+		%emptyActiveNowText {
 			font-size: var(--font-size);
 			color: var(--text-muted);
 		}
-		.base-21yXnu::before {
+		%headerBarTitle::before {
 			content: '';
 			width: 100px;
 			height: 100px;
@@ -102,7 +102,7 @@
 		&:hover {
 			background: var(--background-modifier-hover);
 		}
-		&.active-1W_Gl9 {
+		&%activeNowCardActive {
 			background: rgb(var(--accent));
 			.colorHeaderSecondary-g5teka,
 			.size16-rrJ6ag {
@@ -113,28 +113,28 @@
 			border-bottom: 1px solid var(--base-border);
 		}
 	}
-	.inset-SbsSFp {
+	%activeNowCardInset {
 		background: var(--background-dark);
 		border: 1px solid var(--base-border);
 		margin-top: var(--spacing);
 		border-radius: var(--border-radius);
 	}
-	.section-3G9aLW {
+	%activeNowCardSection {
 		background: transparent;
 	}
 	.separator-2OaeRP {
 		background: var(--base-border);
 	}
-	.section-3G9aLW {
+	%activeNowCardSection {
 		padding: var(--spacing-half);
 	}
 	.itemCard-3Etziu {
-		.base-21yXnu {
+		%headerBarTitle {
 			font-size: var(--font-size);
 			line-height: var(--line-height);
 		}
 		.colorHeaderSecondary-g5teka,
-		.colorStandard-21JIj7 {
+		%activityFeedColorStandard {
 			font-size: var(--font-size-sm);
 			color: var(--text-muted);
 			line-height: var(--line-height);

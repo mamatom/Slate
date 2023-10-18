@@ -1,5 +1,5 @@
 #app-mount {
-	.userPopoutOuter-3AVBmJ {
+	%userPopoutOuter {
 		border: 1px solid var(--base-border);
 		box-shadow: var(--elevation-1);
 		border-radius: var(--border-radius);
@@ -22,7 +22,7 @@
 			mask: none;
 		}
 	}
-	.userPopoutInner-1hXSeY {
+	%userPopoutInner {
 		background: var(--background);
 		&::before {
 			content: none;
@@ -68,14 +68,14 @@
 		display: none;
 	}
 
-	.roles-3zC7MX {
+	%userPopoutRoles {
 		margin: 0;
 		padding: 0 var(--spacing) var(--spacing);
 		display: flex;
 		gap: var(--spacing-half);
 	}
 	.member-perm,
-	.role-2TIOKu {
+	%role {
 		border: none;
 		position: relative;
 		border-radius: 50px;
@@ -85,25 +85,25 @@
 		height: auto;
 		height: 22px;
 		background: transparent;
-		&:hover .roleCircle-3TFUOr,
-		&:active .roleCircle-3TFUOr {
+		&:hover %roleCircle,
+		&:active %roleCircle {
 			opacity: 1;
 			box-sizing: border-box;
-			.roleRemoveIcon-387wKV {
+			%roleRemoveIcon {
 				opacity: 1;
 			}
 		}
 
-		.roleRemoveButton-17oXnT {
+		%roleRemoveButton {
 			position: absolute;
 			inset: 0;
-			&[aria-hidden='false']:hover ~ .roleName-2ZJJYR {
+			&[aria-hidden='false']:hover ~ %roleName {
 				opacity: 0;
 				pointer-events: none;
 			}
 		}
 		.perm-circle,
-		.roleCircle-3TFUOr {
+		%roleCircle {
 			margin: 0;
 			border-radius: var(--border-radius);
 			position: absolute;
@@ -113,7 +113,7 @@
 			height: 100%;
 			opacity: 0.75;
 			filter: none;
-			.roleRemoveIcon-387wKV {
+			%roleRemoveIcon {
 				position: relative;
 				z-index: 10;
 				background: inherit;
@@ -131,7 +131,7 @@
 			}
 		}
 		.member-perm .name,
-		.roleName-2ZJJYR {
+		%roleName {
 			overflow: hidden;
 			line-height: normal;
 			position: relative;
@@ -165,7 +165,7 @@
 			color: var(--text-normal);
 		}
 	}
-	.profileBadges-31rDHI {
+	%userPopoutProfileBadges {
 		padding: 0;
 		top: var(--spacing);
 		right: var(--spacing);
@@ -191,7 +191,7 @@
 			align-items: center;
 			width: 100%;
 		}
-		.messageInputContainer-2rGDH8 {
+		%userPopoutMessageInputContainer {
 			margin: var(--spacing);
 			border: none;
 		}

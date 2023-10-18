@@ -16,7 +16,7 @@
 			border-bottom: 1px solid var(--base-border);
 			display: flex;
 			align-items: center;
-			.breadcrumbWrapper-3rpYiO {
+			%breadcrumbWrapper {
 				color: var(--text-normal);
 				font-weight: var(--font-weight-semibold);
 				.breadcrumb-17S_pr {
@@ -111,7 +111,7 @@
 							width: 14px !important;
 							height: 14px !important;
 						}
-						.checkbox-f1HnKB {
+						%checkbox {
 							display: none;
 						}
 					}
@@ -171,7 +171,7 @@
 			text-decoration: none;
 			&:hover {
 				border: 1px solid currentColor;
-				.contents-3ca1mk {
+				%forumTagClear {
 					background-image: none;
 				}
 			}

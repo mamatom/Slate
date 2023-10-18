@@ -1,6 +1,6 @@
 // Codeblock Lang Database
 
-#app-mount pre code {
+#app-mount %codePre code {
 	&[class~='hljs']::before {
 		content: 'Plain Text';
 	}

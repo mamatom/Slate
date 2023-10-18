@@ -34,13 +34,13 @@
 			clip-path: polygon(0 100%, 100% 100%, 100% 0);
 			box-shadow: var(--elevation-1);
 		}
-		.description-3Cwkxk,
+		%statusPickerDescription,
 		.separator-1So4YB {
 			display: none;
 		}
 
 		// Status Items
-		.item-1OdjEX {
+		%menuPopoutItem {
 			margin: 0;
 			padding: var(--spacing);
 			border-radius: 0;
@@ -53,28 +53,28 @@
 			width: 100%;
 			overflow: hidden;
 			position: relative;
-			.statusItem-2hiCNB {
+			%statusPickerItem {
 				padding: 0;
 				max-height: unset;
 				display: flex;
-				.status-2DiCMd[style='background-color: rgb(67, 181, 129);'] {
+				%statusPickerIcon[style='background-color: rgb(67, 181, 129);'] {
 					background: rgb(var(--status-green)) !important;
 				}
-				.status-2DiCMd[style='background-color: rgb(250, 166, 26);'] {
+				%statusPickerIcon[style='background-color: rgb(250, 166, 26);'] {
 					background: rgb(var(--status-yellow)) !important;
 				}
-				.status-2DiCMd[style='background-color: rgb(240, 71, 71);'] {
+				%statusPickerIcon[style='background-color: rgb(240, 71, 71);'] {
 					background: rgb(var(--status-red)) !important;
 				}
-				.status-2DiCMd[style='background-color: rgb(116, 127, 141);'] {
+				%statusPickerIcon[style='background-color: rgb(116, 127, 141);'] {
 					background: rgb(var(--status-grey)) !important;
 				}
 			}
-			.statusIconText-3b4TkH {
+			%statusPickerText {
 				height: auto;
 				font-size: var(--font-size);
 			}
-			.status-3TYC5W {
+			%statusPickerText {
 				margin-left: var(--spacing);
 			}
 			&:first-child {
@@ -84,7 +84,7 @@
 				z-index: 10;
 				border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
 			}
-			&.focused-3qFvc8 {
+			&%menuPopoutItemHover {
 				background: var(--accent-solid) !important;
 				color: #fff !important;
 				.customEmojiPlaceholder-3mRJqA {
@@ -104,7 +104,7 @@
 					margin-right: var(--spacing-half);
 				}
 				.customEmojiPlaceholder-3mRJqA,
-				.status-3Kz6VS {
+				%statusPickerStatus {
 					width: 10px;
 					height: 10px;
 				}

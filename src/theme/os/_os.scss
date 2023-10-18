@@ -1,16 +1,16 @@
 // Mac
-html.platform-osx #app-mount {
+html%platformOSX #app-mount {
 	.guilds-2JjMmN {
 		margin-top: 0;
-		.tutorialContainer-2sGCg9 .listItem-2P_4kh,
-		.tutorialContainer-2sGCg9 .listItem-GuPuDH {
+		.tutorialContainer-2sGCg9 %guild,
+		.tutorialContainer-2sGCg9 %guild {
 			top: -1px;
 		}
 	}
 }
 
 // Linux
-html.platform-linux {
+html%platformLinux {
 	--titlebar-height: 0px;
 	#guild-header-popout {
 		top: var(--toolbar-height) !important;

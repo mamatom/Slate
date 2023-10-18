@@ -7,7 +7,7 @@
 		contain: none;
 		padding-top: var(--noasw-padding);
 	}
-	.guildSeparator-a4uisj {
+	%guildSeparator {
 		background: var(--base-border);
 		height: 1px;
 	}
@@ -19,15 +19,15 @@
 	}
 }
 
-.theme-light {
+%themeLight {
 	#app-mount .guilds-2JjMmN {
-		.childWrapper-1j_1ub,
-		.circleIconButton-1QV--U,
-		.wrapper-3kah-n,
+		%guildChildWrapper,
+		%circleIconButton,
+		%guildLink,
 		.wrapper-28eC3z {
 			background: var(--background-dark);
 		}
-		.wrapper-3kah-n.selected-1JjBPm .childWrapper-1j_1ub {
+		%guildLink%circleIconButtonSelected %guildChildWrapper {
 			color: var(--white);
 		}
 	}

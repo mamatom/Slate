@@ -29,7 +29,7 @@
 				margin: 0;
 				border-radius: var(--border-radius);
 			}
-			.colorStandard-21JIj7 {
+			%activityFeedColorStandard {
 				color: var(--text-muted);
 				font-size: var(--font-size);
 				font-weight: var(--font-weight);
@@ -114,7 +114,7 @@
 	}
 }
 
-html.theme-light #app-mount .container-ZRw2kD .guildSection-2Zyzy8 .showMoreEmojis-1K08_X {
+html%themeLight #app-mount .container-ZRw2kD .guildSection-2Zyzy8 .showMoreEmojis-1K08_X {
 	&:hover {
 		background: var(--background);
 		border: 1px solid var(--secondary-border);

@@ -1,15 +1,15 @@
 // Display Servers as Channels by DevilBro
 body.styledGuildsAsChannels-DNHtg_ #app-mount .guilds-2JjMmN {
-	.scroller-2TZvBN,
-	.scroller-3X7KbA {
+	%guilds,
+	%guilds {
 		padding-top: var(--spacing);
 	}
-	.tutorialContainer-2sGCg9 .childWrapper-1j_1ub,
-	.tutorialContainer-2sGCg9 .childWrapper-1j_1ub {
+	.tutorialContainer-2sGCg9 %guildChildWrapper,
+	.tutorialContainer-2sGCg9 %guildChildWrapper {
 		background: var(--background-light) !important;
 	}
-	.homeIcon-tEMBK1,
-	.homeIcon-FuNwkv {
+	%homeIcon,
+	%homeIcon {
 		width: 15%;
 	}
 	.name-z5133D {
@@ -21,8 +21,8 @@ body.styledGuildsAsChannels-DNHtg_ #app-mount .guilds-2JjMmN {
 	.textScroller-dc9_kz {
 		line-height: var(--line-height);
 	}
-	.guildSeparator-3s64Iy,
-	.guildSeparator-3s64Iy {
+	%guildSeparator,
+	%guildSeparator {
 		margin-top: 8px;
 	}
 }

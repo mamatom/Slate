@@ -1,12 +1,12 @@
 #app-mount {
-	.guilds-2JjMmN._closed + .base-2jDfDU {
+	.guilds-2JjMmN._closed + %base {
 		left: 0 !important;
-		.header-3OsQeK {
+		%channelsHeader {
 			left: 0;
 		}
 	}
 
-	.sidebar-1tnWFu._closed {
+	%channelsSidebar._closed {
 		width: 0 !important;
 	}
 }

@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .theme-light .root-g14mjS {
+#app-mount %themeLight %modalRoot {
 	transform: none !important;
 	.container-1Lk8p7 {
 		width: 100%;
@@ -12,7 +12,7 @@
 				top: 0 !important;
 			}
 		}
-		.header-1zd7se {
+		%groupInvitePopoutHeader {
 			align-items: flex-start;
 			justify-content: center;
 			.title-1_TkpU,
@@ -170,7 +170,7 @@
 			margin-bottom: var(--spacing);
 		}
 		.formTitle-2YQyhj,
-		.h5-2RwDNl {
+		%activityFeedH5 {
 			margin-bottom: var(--spacing-third);
 		}
 		.examplesForm-N_P087 {
@@ -190,12 +190,12 @@
 				user-select: none;
 			}
 		}
-		.templatesList-uohY49 + .footer-31IekZ button {
+		.templatesList-uohY49 + %modalFooter button {
 			padding: var(--spacing);
 			height: auto;
 			margin: 0;
 		}
-		.footer-31IekZ {
+		%modalFooter {
 			justify-content: flex-start;
 			.footerTitle-3Bslxi {
 				display: none;
@@ -230,23 +230,23 @@
 
 // Light Mode
 
-html.theme-light
+html%themeLight
 	#app-mount
-	.theme-light
-	.root-g14mjS
-	.container-36u7Lw
+	%themeLight
+	%modalRoot
+	%libraryContainer
 	> div[style*='width']
 	> div[style*='width']
 	.templatesList-uohY49
 	.itemContainer-1LSFks:not(:first-child),
-html.theme-light
+html%themeLight
 	#app-mount
-	.theme-light
-	.root-g14mjS
-	.container-36u7Lw
+	%themeLight
+	%modalRoot
+	%libraryContainer
 	> div[style*='width']
 	> div[style*='width']
-	.footer-31IekZ
+	%modalFooter
 	button.lookBlank-3eh9lL {
 	&:hover {
 		background: var(--background);

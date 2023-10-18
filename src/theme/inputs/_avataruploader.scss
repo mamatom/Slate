@@ -7,7 +7,7 @@
 		font-weight: var(--font-weight-normal);
 		cursor: var(--cursor);
 	}
-	.avatarUploaderInner-yEhTv5 {
+	%settingsAvatarUploaderInner {
 		background-color: var(--accent-solid);
 	}
 	.sizeInfo-Wk0Ksj {
@@ -20,7 +20,7 @@
 		font-size: var(--font-size);
 		font-weight: var(--font-weight-normal);
 	}
-	.avatarUploaderInner-yEhTv5 {
+	%settingsAvatarUploaderInner {
 		width: 64px;
 		height: 64px;
 		box-shadow: none;

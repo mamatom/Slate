@@ -1,6 +1,6 @@
 #app-mount {
 	// Native context menus
-	.menu-2TXYjN,
+	%menuPopout,
 	.submenu-3ycVEH {
 		background: var(--background);
 		box-shadow: var(--elevation-1);
@@ -13,7 +13,7 @@
 				width: 0;
 			}
 		}
-		.separator-12G2Op {
+		%menuPopoutSeparator {
 			margin: 0;
 			border-color: var(--base-border);
 		}
@@ -27,7 +27,7 @@
 			height: 32px;
 			text-transform: none;
 		}
-		.item-5ApiZt {
+		%menuPopoutItem {
 			font-size: var(--font-size);
 			color: var(--text-normal);
 			font-weight: var(--font-weight-semibold);
@@ -43,36 +43,36 @@
 				padding: 0 !important;
 			}
 
-			.checkbox-hADx5o {
+			%menuPopoutCheckbox {
 				color: rgb(var(--accent), 1);
 			}
 
 			.labelContainer-2vJzYL {
 				padding: 0 var(--spacing);
 			}
-			&.focused-3LIdPu {
+			&%menuPopoutItemHover {
 				background: var(--background-modifier-hover);
-				.checkbox-hADx5o {
+				%menuPopoutCheckbox {
 					color: #fff;
 				}
-				.check-3HZJs4 {
+				%menuPopoutCheck {
 					color: rgb(var(--accent), 1);
 				}
 			}
-			&:active:not(.hideInteraction-2jPGL_) {
+			&:active:not(%menuPopoutHideInteraction) {
 				background: var(--background-modifier-active);
 			}
-			&.colorDanger-3umuSx {
+			&%menuPopoutItemDanger {
 				color: rgb(var(--status-red));
 			}
-			&.colorBrand-26tvUE {
+			&%menuPopoutItemInvite {
 				color: var(--text-link);
 			}
-			&.hideInteraction-2jPGL_ {
+			&%menuPopoutHideInteraction {
 				height: auto;
 				padding: 0;
 			}
-			.iconContainer-Ksy8Oj {
+			%menuPopoutIconContainer {
 				color: var(--text-muted);
 				margin-left: var(--spacing);
 			}
@@ -100,7 +100,7 @@
 	.customItem-1KYL7t {
 		flex: 1;
 	}
-	.button-1zW0-r {
+	%quickReactButton {
 		padding: 0;
 		width: 100%;
 		border-radius: 0;

@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .privateChannels-oVe7HL {
+#app-mount %privateChannels {
 	overflow: visible;
 	width: var(--sidebar-width);
 	background: var(--background);
@@ -10,7 +10,7 @@
 	}
 
 	// Search Header
-	.searchBar-3TnChZ {
+	%privateChannelsSearchBar {
 		background: var(--toolbar-background);
 		border-bottom: 1px solid var(--toolbar-border);
 		border-right: 1px solid var(--toolbar-border);
@@ -46,17 +46,17 @@
 	}
 
 	// Direct messages header
-	.privateChannelsHeaderContainer-1UWASm {
+	%privateChannelsHeader {
 		padding: var(--spacing);
 		height: auto;
 		color: var(--text-normal);
 		font-size: 12px;
 		text-transform: none;
 	}
-	.privateChannelRecipientsInviteButtonIcon-1ObKXK {
+	%privateChannelsInviteButton {
 		display: none;
 	}
-	.scroller-WSmht3 {
+	%privateChannelsScroller {
 		background: var(--background);
 		div[style*='height: 8px'] {
 			display: none;
@@ -70,11 +70,11 @@
 	.link-39sEB3 {
 		cursor: var(--cursor);
 	}
-	.channel-1Shao0 {
+	%privateChannel {
 		margin: 0;
 		max-width: 100%;
 		padding: 0;
-		.children-283-lq {
+		%listItemSubtext {
 			margin-left: var(--spacing-half);
 		}
 		.layout-1LjVue {
@@ -82,17 +82,17 @@
 			padding: 0 var(--spacing);
 			cursor: var(--cursor);
 		}
-		.name-2m3Cms {
+		%privateChannelName {
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
 			color: var(--text-normal);
 			line-height: normal;
 		}
-		.avatar-1HDIsL {
+		%privateChannelAvatar {
 			margin-right: var(--spacing);
 		}
-		.activityText-ev7Z1T,
-		.subText-3Sk0zy {
+		%privateChannelActivityText,
+		%privateChannelSubText {
 			font-size: var(--font-size-sm);
 			font-weight: var(--font-weight-bold);
 			color: var(--text-muted);
@@ -100,18 +100,18 @@
 		.selected-26oxtA {
 			color: var(--white);
 			background: rgb(var(--accent));
-			.closeButton-mupH76 {
+			%privateChannelCloseButton {
 				display: block;
 				background: var(--white);
 			}
-			.activityText-ev7Z1T,
-			.name-2m3Cms,
-			.subText-3Sk0zy {
+			%privateChannelActivityText,
+			%privateChannelName,
+			%privateChannelSubText {
 				color: var(--white) !important;
 			}
 		}
 	}
-	.closeButton-mupH76 {
+	%privateChannelCloseButton {
 		z-index: 10;
 		opacity: 1;
 		background: var(--text-muted);
@@ -124,7 +124,7 @@
 			background: var(--text-normal);
 		}
 	}
-	.wrapper-1VLyxH {
+	%avatarWrapper {
 		width: 26px !important;
 		height: 26px !important;
 		&::before {
@@ -134,26 +134,26 @@
 			right: -190px;
 		}
 	}
-	&:hover .wrapper-1VLyxH::before {
+	&:hover %avatarWrapper::before {
 		background: linear-gradient(90deg, transparent, var(--background-modifier-hover) 50%);
 	}
-	&:active .wrapper-1VLyxH::before {
+	&:active %avatarWrapper::before {
 		background: linear-gradient(90deg, transparent, var(--background-modifier-active) 50%);
 	}
 
 	// Empty DMs List
-	.empty-yQo7LQ {
+	%privateChannelsEmpty {
 		display: none;
 	}
 }
 
 // Light mode optimization
-.theme-light #app-mount .privateChannels-oVe7HL .channel-1Shao0.selected-1-Z6gm {
+%themeLight #app-mount %privateChannels %privateChannel%memberSelected {
 	color: #fff;
 
-	.activityText-ev7Z1T,
-	.name-2m3Cms,
-	.subText-3Sk0zy {
+	%privateChannelActivityText,
+	%privateChannelName,
+	%privateChannelSubText {
 		color: #fff !important;
 	}
 }

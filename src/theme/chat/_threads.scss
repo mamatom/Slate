@@ -1,6 +1,6 @@
 #app-mount {
 	// Channel
-	.typeThread-2Aqh6X .mainContent-20q_Hp {
+	.typeThread-2Aqh6X %channelMain {
 		padding: 0;
 		padding-left: var(--spacing-triple);
 		&::before {
@@ -8,24 +8,24 @@
 			bottom: 0;
 		}
 	}
-	.spine-29OFwR {
+	%threadChannelConnector {
 		z-index: 1;
 		color: var(--text-muted);
 	}
 
 	// Chat
-	.container-3i3IzO {
+	%threadEmbed {
 		margin-top: var(--spacing-half);
 		border-radius: var(--border-radius);
 		border: 1px solid var(--base-border);
 		padding: var(--spacing);
 		background: var(--background);
 		.name-13vPlv,
-		.cta-1XhfrG,
+		%threadCTA,
 		.timestamp-1VMnSc {
 			font-size: var(--chat-font-size);
 		}
-		.username-h_Y3Us {
+		%messageUsername {
 			margin-right: var(--spacing-half);
 		}
 	}
@@ -34,7 +34,7 @@
 	}
 
 	// Rightside chat
-	.resizeHandle-PBRzPC {
+	%chatResize {
 		border-left: 1px solid var(--base-border);
 		background: var(--background-dark);
 	}
@@ -44,13 +44,13 @@
 		border-radius: 0;
 		border-left: 1px solid var(--base-border);
 		background: transparent;
-		.form-3gdLxP {
+		%chatForm {
 			padding-left: var(--spacing);
 		}
 		.scrollerSpacer-3AqkT9 {
 			display: none;
 		}
-		.children-3xh0VB {
+		%headerBarChildren {
 			width: calc(100% - 80px);
 		}
 	}
@@ -63,7 +63,7 @@
 		height: 32px;
 		border-radius: 0;
 	}
-	.messagePreview-2T8rT7.cozy-VmLDNB .avatar-2e8lTP {
+	.messagePreview-2T8rT7%cozy %avatarLarge {
 		top: 0;
 	}
 

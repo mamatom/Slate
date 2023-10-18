@@ -1,5 +1,5 @@
 #app-mount {
-	.slider-1NC-Gf {
+	%slider {
 		height: var(--input-height);
 		top: -5px;
 		.mark-2iakCT {
@@ -17,7 +17,7 @@
 				width: 1px;
 			}
 		}
-		.bar-1Bhnl9 {
+		%sliderBar {
 			border-radius: 50px;
 			height: 4px;
 			background: var(--background-dark);
@@ -25,13 +25,13 @@
 			top: 50%;
 			transform: translateY(-50%);
 		}
-		.track-1BI4CA {
+		%sliderTrack {
 			height: var(--input-height);
 		}
-		.barFill-2Bh7CX {
+		%sliderBarFill {
 			background: var(--accent-solid);
 		}
-		.grabber-2GQyvM {
+		%sliderGrabber {
 			background: var(--accent-solid);
 			box-shadow: none;
 			border: none;

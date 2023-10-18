@@ -1,5 +1,5 @@
 #app-mount {
-	.messagesPopoutWrap-3zryHW {
+	%messagesPopoutWrap {
 		position: absolute;
 		margin-left: -42px;
 		border: none;
@@ -8,7 +8,7 @@
 		border-radius: var(--border-radius);
 		background: var(--background);
 	}
-	.header-1w9Q93 {
+	%messagesPopoutHeader {
 		background: var(--background-dark);
 		padding: var(--spacing);
 		border-bottom: 1px solid var(--base-border);
@@ -23,27 +23,27 @@
 			display: none;
 		}
 	}
-	.messageGroupWrapper-1jf_7C {
+	%pinnedMessageGroupWrapper {
 		border-radius: 0;
 		border: none;
 		border-bottom: 1px solid var(--base-border);
 		background: transparent;
 		margin-bottom: 0;
 		padding-top: var(--spacing-double);
-		& > .wrapper-2a6GCs {
+		& > %messagesWrapper {
 			margin-top: 0 !important;
 		}
-		.avatar-2e8lTP {
+		%avatarLarge {
 			top: 0 !important;
 		}
-		.container-2sjPya {
+		%embedContainer {
 			padding-top: var(--spacing);
 		}
-		&:hover .jumpButton-1ZwI_j {
+		&:hover %pinnedJumpButton {
 			opacity: 1;
 		}
 	}
-	.jumpButton-1ZwI_j {
+	%pinnedJumpButton {
 		font-size: var(--font-size);
 		font-weight: var(--font-weight-normal);
 		cursor: var(--cursor);

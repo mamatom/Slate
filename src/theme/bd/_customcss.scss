@@ -99,7 +99,7 @@
 }
 
 // Light Mode
-html.theme-light {
+html%themeLight {
 	#app-mount #bd-customcss-detach-controls-button button {
 		&:hover {
 			background: var(--background) !important;

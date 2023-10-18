@@ -7,7 +7,7 @@
 	position: relative;
 	padding-top: 32px;
 	min-height: unset;
-	.inner-rBP-MS {
+	%uploadDropModalInner {
 		margin: 0;
 		padding: var(--spacing-double);
 		box-sizing: border-box;
@@ -77,11 +77,11 @@
 				}
 			}
 		}
-		.channelTextArea-1VQBuV {
+		%channelTextArea {
 			margin: 0;
-			.inner-NQg18Y {
+			%channelTextAreaInner {
 				background: var(--background-alt);
-				.scrollableContainer-15eg7h {
+				%channelTextAreaScrollable {
 					border-radius: var(--border-radius);
 				}
 			}
@@ -96,13 +96,13 @@
 		box-shadow: none;
 		border-top: 1px solid var(--base-border);
 		padding: var(--spacing);
-		.checkboxWrapper-2fDzaA {
+		%checkboxWrapper {
 			flex: none;
 		}
-		.checkbox-f1HnKB {
+		%checkbox {
 			border: none;
 			background: var(--background-dark);
-			&.checked-1pZh2h {
+			&%checkboxChecked {
 				background: var(--accent-solid);
 				polyline {
 					stroke: #fff;

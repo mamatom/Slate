@@ -1,6 +1,6 @@
 @use '../assets';
 
-#app-mount .root-g14mjS.popout-3gby1q {
+#app-mount %modalRoot%groupInvitePopout {
 	left: 246px;
 	top: calc(var(--spacing) - 8px);
 	position: relative;
@@ -27,7 +27,7 @@
 		clip-path: polygon(0 100%, 100% 100%, 100% 0);
 		box-shadow: var(--elevation-1);
 	}
-	.header-1zd7se {
+	%groupInvitePopoutHeader {
 		padding: var(--spacing);
 		transition: none;
 		box-shadow: none;
@@ -37,7 +37,7 @@
 		border-radius: var(--border-radius) var(--border-radius) 0 0;
 		position: static;
 		.h4-1_f8j1,
-		.tag-15zcD_ {
+		%groupInvitePopoutSearchTag {
 			// fuck these
 			display: none;
 		}
@@ -59,7 +59,7 @@
 			opacity: 0.5;
 			cursor: not-allowed;
 		}
-		.subtitle-3v29zT {
+		%groupInvitePopoutSubtitle {
 			color: var(--text-normal);
 			font-size: var(--font-size);
 			font-weight: var(--font-weight-normal);
@@ -67,11 +67,11 @@
 			margin: 0;
 			margin-bottom: var(--spacing-half);
 		}
-		.searchBar-14YqL- {
+		%groupInvitePopoutSearchBar {
 			margin: 0;
-			.inner-1NoIT5 {
+			%groupInvitePopoutSearchBarInner {
 				overflow: visible !important;
-				.input-2FSSDe {
+				%popoutInput {
 					padding: 0 var(--spacing-half);
 				}
 			}
@@ -80,10 +80,10 @@
 	.scroller-1Kbkqa {
 		.content-2a4AW9 {
 			height: fit-content !important;
-			.friendWrapper-2x5j0A {
+			%groupInvitePopoutFriendWrapper {
 				margin: 0;
 				padding: 0;
-				.friend-8ZraY7 {
+				%groupInvitePopoutFriend {
 					font-size: var(--font-size);
 					font-weight: var(--font-weight);
 					color: var(--text-);
@@ -97,20 +97,20 @@
 						height: var(--avatar-size-xsm) !important;
 						width: var(--avatar-size-xsm) !important;
 					}
-					.nickname-1PdAp3 {
+					%groupInvitePopoutNickname {
 						display: none; // what is even the point of this
 					}
-					.discordTag-2ke74W {
+					%groupInvitePopoutDiscordTag {
 						opacity: 1;
 						color: var(--text-muted);
 						font-size: var(--font-size);
 						line-height: normal;
-						.username-3JLfHz {
+						%friendsColumnNameUsername-3JLfHz {
 							font-weight: var(--font-weight-semibold);
 							color: var(--text-normal);
 						}
 					}
-					&.friendSelected-3cwmD7,
+					&%groupInvitePopoutFriendSelected,
 					&:hover {
 						background: var(--background-modifier-hover);
 					}
@@ -144,17 +144,17 @@
 			max-width: 180px;
 		}
 	}
-	.footerSeparator-b6VH1V {
+	%groupInvitePopoutFooterSeparator {
 		display: none; // why would they even add this
 	}
-	.footer-C9oLp9 {
+	%groupInvitePopoutFooter {
 		flex: 0 !important;
 		padding: var(--spacing);
 		border-top: 1px solid var(--base-border);
 		button {
 			margin: 0;
 		}
-		.h5-18_1nd + .input-2g-os5 {
+		%activityFeedH5 + %input {
 			border: none;
 			padding: 0;
 			background: transparent;

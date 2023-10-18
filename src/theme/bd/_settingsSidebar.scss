@@ -1,7 +1,7 @@
 @use '../assets';
 
 #app-mount {
-	.sidebar-CFHs9e .item-PXvHYJ {
+	%settingsSidebar %tabBarItem {
 		&[aria-controls='Emotes-tab']::before {
 			mask-image: url(assets.$icon_smiley);
 			mask-size: 14px;

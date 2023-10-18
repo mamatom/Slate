@@ -35,7 +35,7 @@
 				height: 16px;
 				background: var(--text-muted);
 				mask: url(assets.$icon_pencil) center/12px no-repeat;
-				.contents-3ca1mk {
+				%forumTagClear {
 					display: none;
 				}
 			}
@@ -65,6 +65,6 @@
 
 // Light Mode
 
-html.theme-light #app-mount .container-30qY7E {
+html%themeLight #app-mount .container-30qY7E {
 	background: var(--background);
 }

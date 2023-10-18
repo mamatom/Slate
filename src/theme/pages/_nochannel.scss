@@ -1,7 +1,7 @@
 @use '../assets';
 
 #app-mount {
-	.noChannel-Z1DQK7 {
+	%noChannel {
 		background: var(--background-alt);
 		display: flex;
 		flex-direction: column;
@@ -32,7 +32,7 @@
 			max-width: unset;
 			background: var(--text-muted);
 			mask: url(assets.$illustration_4) center/50% no-repeat;
-			.image-20MDYu,
+			%noChannelImage,
 			.flexChild-3PzYmX {
 				display: none;
 			}

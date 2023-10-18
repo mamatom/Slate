@@ -79,48 +79,48 @@
 			}
 
 			// Syntax
-			.hljs-built_in,
-			.hljs-doctag,
-			.hljs-literal,
-			.hljs-meta .hljs-meta-string,
-			.hljs-number,
-			.hljs-regexp,
-			.hljs-selector-class {
+			%codeHLJS-built_in,
+			%codeHLJS-doctag,
+			%codeHLJS-literal,
+			%codeHLJS-meta %codeHLJS-meta-string,
+			%codeHLJS-number,
+			%codeHLJS-regexp,
+			%codeHLJS-selector-class {
 				color: var(--syntax-purple);
 			}
-			.hljs-attribute,
-			.hljs-name,
-			.hljs-section,
-			.hljs-selector-class,
-			.hljs-selector-id,
-			.hljs-string,
-			.hljs-title {
+			%codeHLJS-attribute,
+			%codeHLJS-name,
+			%codeHLJS-section,
+			%codeHLJS-selector-class,
+			%codeHLJS-selector-id,
+			%codeHLJS-string,
+			%codeHLJS-title {
 				color: var(--syntax-blue);
 			}
-			.hljs-attr,
-			.hljs-attribute,
-			.hljs-bullet,
-			.hljs-class,
-			.hljs-link,
-			.hljs-meta,
-			.hljs-meta .hljs-keyword,
-			.hljs-selector-attr,
-			.hljs-selector-pseudo,
-			.hljs-subst,
-			.hljs-symbol,
-			.hljs-template-variable,
-			.hljs-title,
-			.hljs-type,
-			.hljs-variable {
+			%codeHLJS-attr,
+			%codeHLJS-attribute,
+			%codeHLJS-bullet,
+			%codeHLJS-class,
+			%codeHLJS-link,
+			%codeHLJS-meta,
+			%codeHLJS-meta %codeHLJS-keyword,
+			%codeHLJS-selector-attr,
+			%codeHLJS-selector-pseudo,
+			%codeHLJS-subst,
+			%codeHLJS-symbol,
+			%codeHLJS-template-variable,
+			%codeHLJS-title,
+			%codeHLJS-type,
+			%codeHLJS-variable {
 				color: var(--syntax-orange);
 			}
-			.hljs-addition,
-			.hljs-keyword,
-			.hljs-selector-tag {
+			%codeHLJS-addition,
+			%codeHLJS-keyword,
+			%codeHLJS-selector-tag {
 				color: var(--syntax-green);
 			}
-			.hljs-comment,
-			.hljs-quote {
+			%codeHLJS-comment,
+			%codeHLJS-quote {
 				color: var(--syntax-grey);
 			}
 		}

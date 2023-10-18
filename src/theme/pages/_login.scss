@@ -19,7 +19,7 @@
 	}
 
 	// Authbox
-	.authBox-1HR6Ha {
+	%addAccountAuthBox {
 		padding: 0;
 		max-width: 400px;
 		background: var(--background);
@@ -36,17 +36,17 @@
 			margin: 0;
 			padding: var(--spacing-double);
 			box-sizing: border-box;
-			.lookLink-9FtZy- {
+			%buttonLink {
 				margin: var(--spacing) 0;
 			}
 			.smallRegisterLink-1qEJhz {
 				margin-bottom: 0;
 			}
-			.lookFilled-1Gx00P,
+			%buttonFilled,
 			.marginTop4-2JFJJI:last-child {
 				margin: 0;
 			}
-			.title-3hptVQ {
+			%groupInvitePopoutTitle {
 				font-size: var(--font-size);
 			}
 			.subText-1fpEGH {
@@ -165,7 +165,7 @@
 
 // Light Mode
 
-html.theme-light #app-mount .wrapper-25sY58 .qrLogin-1ejtpI .startOverButton-1G3jim {
+html%themeLight #app-mount .wrapper-25sY58 .qrLogin-1ejtpI .startOverButton-1G3jim {
 	&:hover {
 		background: var(--background);
 		border: 1px solid var(--secondary-border);
