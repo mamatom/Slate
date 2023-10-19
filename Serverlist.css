@@ -1,22 +1,16 @@
+/* ### Powered by DiscordSelectors v0.2.7 ### */
 :root {
   --icon: var(--server-icon-size, var(--ASW_size, 35px));
   --container: calc(var(--icon) + calc(var(--server-container-padding) * 2));
 }
 
-#app-mount .homeIcon-r0w4ny {
-  width: 32px; /*TODO no hardcode here!*/
-}
-
 .guilds-2JjMmN {
   width: var(--container);
-}
-.guilds-2JjMmN .scrollerWrap-1IAIlv {
-  width: calc(100% + 30px);
 }
 .guilds-2JjMmN [role=group] {
   height: auto !important;
 }
-.guilds-2JjMmN .placeholderMask-3K9THS {
+.guilds-2JjMmN .placeholderMask-2FHNZU {
   width: var(--icon);
   height: var(--icon);
 }
@@ -163,7 +157,7 @@
 .guilds-2JjMmN [class*=unreadMentionsIndicator] {
   width: 100%;
 }
-.guilds-2JjMmN .guildsError-b7zR5H,
+.guilds-2JjMmN .guildsError-YJjW3A,
 .guilds-2JjMmN .svg-2ifYOU,
 .guilds-2JjMmN .wrapper-2PSQCG {
   width: var(--icon);

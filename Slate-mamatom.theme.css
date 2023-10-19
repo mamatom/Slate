@@ -1,5 +1,5 @@
 /**
- * @name Slate
+ * @name Slate-mamatom
  * @author mamatom
  * @description A fork of DiscordStyles/Slate
  * @version 1.2
@@ -8,8 +8,8 @@
 
 @import url('https://mamatom.github.io/Slate/dist/Slate.css');
 
-@import url("https://discordstyles.github.io/Slate/Serverlist.css");
-@import url("https://discordstyles.github.io/Slate/ToolbarActions.css");
+@import url("https://mamatom.github.io/Slate/Serverlist.css");
+@import url("https://mamatom.github.io/Slate/ToolbarActions.css");
 /*
   Basic Variables
   See available vars here: https://github.com/DiscordStyles/Slate/wiki
